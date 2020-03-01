@@ -239,6 +239,7 @@
     <option name="width" value="1770" />
     <option name="height" value="1000" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <flattenPackages ProjectPane="false" />
@@ -254,41 +255,6 @@
               <item name="boluo-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="boluo-parent" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="boluo-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="boluo-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="boluo-user-service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="boluo-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="boluo-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="boluo-user-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="boluo-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="boluo-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="boluo-user-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="boluo-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="boluo-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="boluo-user-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="boluo-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="boluo-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="boluo-user-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -302,6 +268,7 @@
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RequestMappingsPanelWidth2" value="75" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/boluo-animal-service/src/main/java" />
@@ -449,16 +416,15 @@
       <workItem from="1582704665612" duration="3475000" />
       <workItem from="1582719938187" duration="815000" />
       <workItem from="1582955117131" duration="3080000" />
-      <workItem from="1583049627976" duration="626000" />
+      <workItem from="1583049627976" duration="1006000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="155720000" />
+    <option name="totallyTimeSpent" value="156100000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19034852" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
