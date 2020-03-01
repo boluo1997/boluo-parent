@@ -87,8 +87,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/boluo-user-service/src/main/java/cn/tedu/user/StarterUser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="13" column="54" lean-forward="true" selection-start-line="13" selection-start-column="54" selection-end-line="13" selection-end-column="54" />
+            <state relative-caret-position="54">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#454#455#0" expanded="true" />
@@ -162,10 +162,12 @@
       <dir>D:\IDEA_projects\boluo-parent\boluo-animal-service\src\main\java\cn\tedu\animal</dir>
     </dirStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/boluo-givelose-service/src/main/java/cn/tedu/givelose/service/GiveloseService.java" />
         <option value="$PROJECT_DIR$/boluo-givelose-service/src/main/java/cn/tedu/givelose/mapper/GiveloseMapper.java" />
         <option value="$PROJECT_DIR$/boluo-givelose-service/src/main/resources/mapper/GiveLose.xml" />
         <option value="$PROJECT_DIR$/boluo-givelose-service/src/main/java/cn/tedu/givelose/controller/GiveloseController.java" />
@@ -216,6 +218,7 @@
         <option value="$PROJECT_DIR$/boluo-common-resources/src/main/java/com/jt/common/vo/PicUploadResult.java" />
         <option value="$PROJECT_DIR$/boluo-img-service/src/main/java/cn/tedu/img/controller/ImgController.java" />
         <option value="$PROJECT_DIR$/boluo-img-service/src/main/java/cn/tedu/img/service/ImgService.java" />
+        <option value="$PROJECT_DIR$/boluo-user-service/src/main/java/cn/tedu/user/StarterUser.java" />
       </list>
     </option>
   </component>
@@ -416,15 +419,16 @@
       <workItem from="1582704665612" duration="3475000" />
       <workItem from="1582719938187" duration="815000" />
       <workItem from="1582955117131" duration="3080000" />
-      <workItem from="1583049627976" duration="1006000" />
+      <workItem from="1583049627976" duration="1257000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="156100000" />
+    <option name="totallyTimeSpent" value="156351000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19034852" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -939,8 +943,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/boluo-user-service/src/main/java/cn/tedu/user/StarterUser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="13" column="54" lean-forward="true" selection-start-line="13" selection-start-column="54" selection-end-line="13" selection-end-column="54" />
+        <state relative-caret-position="54">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#454#455#0" expanded="true" />
