@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="cn.tedu.animal.mapper.AnimalMapper">
+
+    <select id="selectAnimalCount" resultType="Integer">
+        select count(animal_id) from animal;
+    </select>
+
+    <select id="selectAnimalByPage" resultType="Animal">
+        select *
+        from animal
+        limit #{start},#{rows}
+    </select>
+
+    <select id="selectAnimalById" resultType="Animal">
+        select *
+        from animal
+        where animal_id=#{animalId}
+    </select>
+
+    <!-- 管理员添加动物 -->
+    <insert id="insertAnimal" parameterType="Animal">
+        insert into animal (
+            animal_name,
+            animal_image,
+            animal_type,
+            animal_info
+        )values(
+            #{animalName},
+            #{animalImage},
+            #{animalType},
+            #{animalInfo}
+        )
+    </insert>
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

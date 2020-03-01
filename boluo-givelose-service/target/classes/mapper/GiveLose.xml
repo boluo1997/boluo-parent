@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="cn.tedu.givelose.mapper.GiveloseMapper">
+
+    <select id="selectGiveCount" resultType="Integer">
+        select count(give_id)
+        from give
+    </select>
+
+    <select id="selectGiveByPage" resultType="Give">
+        select *
+        from give
+        limit #{start},#{rows}
+    </select>
+
+    <select id="selectGiveById" resultType="Give">
+        select *
+        from give
+        where give_id = #{giveId}
+    </select>
+
+    <insert id="insertGive" parameterType="Give">
+        insert into give (
+            give_title,
+            give_image,
+            give_info
+        )values(
+            #{giveTitle},
+            #{giveImage},
+            #{giveInfo}
+        )
+    </insert>
+
+
+    <!-- 分隔线 上面是送养信息发布区 下面是丢失动物招寻处 -->
+
+
+    <select id="selectLoseCount" resultType="Integer">
+        select count(lose_id)
+        from lose
+    </select>
+
+    <select id="selectLoseByPage" resultType="Lose">
+        select *
+        from lose
+        limit #{start},#{rows}
+    </select>
+
+    <select id="selectLoseById" resultType="Lose">
+        select *
+        from lose
+        where lose_id = #{loseId}
+    </select>
+
+    <insert id="insertLose" parameterType="Lose">
+        insert into lose(
+            lose_title,
+            lose_image,
+            lose_info
+        )values(
+            #{loseTitle},
+            #{loseImage},
+            #{loseInfo}
+        )
+    </insert>
+
+
+</mapper>
