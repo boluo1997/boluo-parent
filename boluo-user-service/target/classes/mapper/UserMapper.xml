@@ -54,13 +54,23 @@
         where user_id = #{userId};
     </delete>
 
-    <insert id="insertTemp" parameterType="Integer">
+    <!--查看是否重复申请-->
+    <select id="selectStatusByUserIdAndAnimalId" parameterType="Integer" resultType="Temp">
+        select *
+        from temp
+        where user_id = #{userId} and animal_id = #{animalId};
+    </select>
+
+    <!-- 申请领养动物、往伪领养表中添加数据 -->
+    <insert id="insertTemp">
         insert into temp(
             user_id,
-            animal_id
+            animal_id,
+            user_name
         )values(
             #{userId},
-            #{animalId}
+            #{animalId},
+            #{userName}
         )
     </insert>
 

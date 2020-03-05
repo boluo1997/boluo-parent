@@ -1,9 +1,11 @@
 package cn.tedu.user.service;
 
 import cn.tedu.user.mapper.UserMapper;
+import com.jt.common.pojo.Temp;
 import com.jt.common.pojo.User;
 import com.jt.common.utils.MD5Util;
 import com.jt.common.vo.EasyUIResult;
+import com.jt.common.vo.SysResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -15,7 +17,7 @@ public class UserService {
     @Autowired
     private UserMapper um;
 
-    //判断用户名是否已经被注册
+    //判注断用户名是否已经被册
     public boolean userNameExists(String userName) {
         System.out.println("Service userNameExists");
         int exist = um.selectUserCountByUserName(userName);
@@ -109,10 +111,16 @@ public class UserService {
     }
 
     //申请领养动物
-    public void adoptAnimal(Integer userId, Integer animalId) {
-        um.insertTemp(userId,animalId);
+    public void adoptAnimal(Integer userId, Integer animalId,String userName) {
+        this.existUserId(userId,animalId);
+        um.insertTemp(userId,animalId,userName);
     }
 
+    //查看是否重复申请
+    public Temp existUserId(Integer userId, Integer animalId){
+        Temp exist = um.selectStatusByUserIdAndAnimalId(userId,animalId);
+        return exist;
+    }
 
     //查看自己被批准可以领养的动物
     public EasyUIResult queryPageAdopt(Integer page, Integer rows, Integer userId) {

@@ -1,6 +1,7 @@
 package cn.tedu.user.mapper;
 
 import com.jt.common.pojo.Adopt;
+import com.jt.common.pojo.Temp;
 import com.jt.common.pojo.User;
 import org.apache.ibatis.annotations.Param;
 
@@ -27,7 +28,7 @@ public interface UserMapper {
     void deleteUserById(Integer userId);
 
     //把领养信息暂时存入领养表中
-    void insertTemp(@Param("userId") Integer userId,@Param("animalId") Integer animalId);
+    void insertTemp(@Param("userId") Integer userId,@Param("animalId") Integer animalId,@Param("userName")String userName);
 
     Integer selectAdoptCount();
 
@@ -36,4 +37,8 @@ public interface UserMapper {
 
     //申请成为志愿者
     void updateUserById(Integer userId);
+
+    //判断是否重复申请
+    Temp selectStatusByUserIdAndAnimalId(@Param("userId") Integer userId,@Param("animalId") Integer animalId);
+
 }

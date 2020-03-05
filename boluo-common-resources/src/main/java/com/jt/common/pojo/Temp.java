@@ -6,6 +6,8 @@ public class Temp {
     private Integer tempId;
     private Integer userId;
     private Integer animalId;
+    private Integer statusId;
+    private String userName;
 
     public Integer getTempId() {
         return tempId;
@@ -30,4 +32,32 @@ public class Temp {
     public void setAnimalId(Integer animalId) {
         this.animalId = animalId;
     }
+
+    public Integer getStatusId() {
+        return statusId;
+    }
+
+    public void setStatusId(Integer statusId) {
+        this.statusId = statusId;
+    }
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+
+    @Override
+    public String toString() {
+        return "Temp{" +
+                "tempId=" + tempId +
+                ", userId=" + userId +
+                ", animalId=" + animalId +
+                ", statusId=" + statusId +
+                ", userName='" + userName + '\'' +
+                '}';
+    }
+
 }

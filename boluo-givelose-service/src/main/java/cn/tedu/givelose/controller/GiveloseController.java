@@ -60,6 +60,7 @@ public class GiveloseController {
         //判断新增成功失败
         try{
             gs.addLose(lose);
+            System.out.println(lose);
             return SysResult.ok();
         }catch(Exception e){
             e.printStackTrace();

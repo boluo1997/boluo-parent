@@ -7,6 +7,7 @@ import com.jt.common.vo.EasyUIResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Date;
 import java.util.List;
 
 @Service
@@ -64,7 +65,9 @@ public class GiveloseService {
         return gm.selectLoseById(loseId);
     }
 
+    //添加丢失动物找寻信息
     public void addLose(Lose lose) {
+        lose.setLoseCreateTime(new Date());
         gm.insertLose(lose);
     }
 }

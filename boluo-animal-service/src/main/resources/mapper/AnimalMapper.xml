@@ -27,14 +27,23 @@
             animal_name,
             animal_image,
             animal_type,
-            animal_info
+            animal_info,
+            give_name,
+            give_title,
+            give_phone,
+            give_address
         )values(
             #{animalName},
             #{animalImage},
             #{animalType},
-            #{animalInfo}
+            #{animalInfo},
+            #{giveName},
+            #{giveTitle},
+            #{givePhone},
+            #{giveAddress}
         )
     </insert>
+
 </mapper>
 
 

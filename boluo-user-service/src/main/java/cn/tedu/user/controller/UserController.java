@@ -94,16 +94,23 @@ public class UserController {
     }
 
 
-    //申请领养动物        //往notua表中添加数据  userId和animalId
+    //申请领养动物        //往temp表中添加数据  userId和animalId
     @RequestMapping("adopt")
-    public SysResult adoptAnimal(Integer userId,Integer animalId){
-        try{
-            us.adoptAnimal(userId,animalId);
-            return SysResult.ok();
-        }catch (Exception e){
-            e.printStackTrace();
-            return SysResult.build(201,"删除失败!",null);
+    public SysResult adoptAnimal(Integer userId,Integer animalId,String userName){
+
+        if(us.existUserId(userId,animalId)==null){
+            try{
+                us.adoptAnimal(userId,animalId,userName);
+                return SysResult.ok();
+            }catch (Exception e){
+                e.printStackTrace();
+                return SysResult.build(201,"失败!",null);
+            }
+        }else {     //返回的有数据
+            return SysResult.build(202,"不能重复申请",null);
         }
+
+
     }
 
 

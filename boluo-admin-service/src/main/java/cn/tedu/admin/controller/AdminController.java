@@ -7,6 +7,7 @@ import com.jt.common.vo.EasyUIResult;
 import com.jt.common.vo.SysResult;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -32,7 +33,25 @@ public class AdminController {
         }
     }
 
-    //查看想领养动物人员的名单      查看伪领养表中的内容
+    //查看用户信息--分页查询
+    @RequestMapping("check")
+    public EasyUIResult checkUser(Integer page,Integer rows){
+        return as.queryPageUser(page,rows);
+    }
+
+    //删除用户
+    @RequestMapping("delete/{userId}")
+    public SysResult deleteUser(@PathVariable Integer userId){
+        try{
+            as.deleteUser(userId);
+            return SysResult.ok();
+        }catch (Exception e){
+            e.printStackTrace();
+            return SysResult.build(201,"删除用户失败!",null);
+        }
+    }
+
+    //查看想领养动物人员的名单--分页      查看伪领养表中的内容
     @RequestMapping("pageManager")
     public EasyUIResult queryPageTemp(Integer page, Integer rows){
         return as.queryPageTemp(page,rows);

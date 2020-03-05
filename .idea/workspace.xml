@@ -28,71 +28,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/boluo-img-service/src/main/java/cn/tedu/img/controller/ImgController.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/boluo-admin-service/src/main/java/cn/tedu/admin/controller/AdminController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="405">
-              <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+              <caret line="54" column="32" lean-forward="true" selection-start-line="54" selection-start-column="32" selection-end-line="54" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/boluo-user-service/src/main/java/cn/tedu/user/service/UserService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="891">
-              <caret line="40" column="59" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="59" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2924#2925#0" expanded="true" />
-                <element signature="e#2970#2971#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/boluo-common-resources/src/main/java/com/jt/common/pojo/Give.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="41" selection-start-line="41" selection-end-line="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/boluo-user-service/src/main/resources/mapper/UserMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="864">
-              <caret line="32" column="70" selection-start-line="32" selection-start-column="70" selection-end-line="32" selection-end-column="70" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/boluo-img-service/src/main/java/cn/tedu/img/service/ImgService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1674">
-              <caret line="68" column="45" selection-start-line="68" selection-start-column="45" selection-end-line="68" selection-end-column="45" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/boluo-user-service/src/main/java/cn/tedu/user/StarterUser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#454#455#0" expanded="true" />
-                <element signature="e#515#516#0" expanded="true" />
+                <element signature="e#1009#1010#0" expanded="true" />
+                <element signature="e#1059#1060#0" expanded="true" />
+                <element signature="e#1197#1198#0" expanded="true" />
+                <element signature="e#1247#1248#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -101,8 +47,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/boluo-animal-service/src/main/java/cn/tedu/animal/controller/AnimalController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="25" column="36" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="36" />
+            <state relative-caret-position="540">
+              <caret line="27" column="43" lean-forward="true" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
               <folding>
                 <element signature="e#710#711#0" expanded="true" />
                 <element signature="e#762#763#0" expanded="true" />
@@ -116,8 +62,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/boluo-animal-service/src/main/java/cn/tedu/animal/service/AnimalService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+            <state relative-caret-position="189">
+              <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#906#907#0" expanded="true" />
@@ -128,17 +74,78 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/boluo-user-service/src/main/resources/application.properties">
+        <entry file="file://$PROJECT_DIR$/boluo-admin-service/src/main/resources/mapper/AdminMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="17" selection-start-column="17" selection-end-column="17" />
+            <state relative-caret-position="810">
+              <caret line="30" column="34" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/boluo-user-service/pom.xml">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/boluo-img-service/src/main/java/cn/tedu/StarterImg.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+              <folding>
+                <element signature="e#319#320#0" expanded="true" />
+                <element signature="e#379#380#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/boluo-animal-service/src/main/resources/mapper/AnimalMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="11" column="52" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/boluo-common-resources/src/main/java/com/jt/common/pojo/Admin.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/boluo-admin-service/src/main/java/cn/tedu/admin/service/AdminService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="116">
+              <caret line="55" column="5" lean-forward="true" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1334#1335#0" expanded="true" />
+                <element signature="e#1351#1352#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/boluo-animal-service/src/main/java/cn/tedu/animal/mapper/AnimalMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/boluo-admin-service/src/main/java/cn/tedu/admin/mapper/AdminMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="21" column="44" lean-forward="true" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -168,12 +175,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/boluo-givelose-service/src/main/java/cn/tedu/givelose/mapper/GiveloseMapper.java" />
-        <option value="$PROJECT_DIR$/boluo-givelose-service/src/main/resources/mapper/GiveLose.xml" />
-        <option value="$PROJECT_DIR$/boluo-givelose-service/src/main/java/cn/tedu/givelose/controller/GiveloseController.java" />
-        <option value="$PROJECT_DIR$/boluo-img-service/pom.xml" />
-        <option value="$PROJECT_DIR$/boluo-img-service/src/main/java/cn/tedu/App.java" />
-        <option value="$PROJECT_DIR$/boluo-common-resources/src/main/java/com/jt/common/utils/UploadUtil.java" />
         <option value="$PROJECT_DIR$/boluo-zuul-client01/pom.xml" />
         <option value="$PROJECT_DIR$/boluo-zuul-client01/src/main/java/cn/tedu/StarterZuul01.java" />
         <option value="$PROJECT_DIR$/boluo-zuul-service/pom.xml" />
@@ -193,11 +194,8 @@
         <option value="$PROJECT_DIR$/boluo-admin-service/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/boluo-animal-service/src/main/java/cn/tedu/animal/mapper/AnimalMapper.java" />
         <option value="$PROJECT_DIR$/boluo-common-resources/src/main/java/com/jt/common/pojo/Adopt.java" />
-        <option value="$PROJECT_DIR$/boluo-common-resources/src/main/java/com/jt/common/pojo/Temp.java" />
         <option value="$PROJECT_DIR$/boluo-common-resources/src/main/java/com/jt/common/vo/EasyUIResult.java" />
         <option value="$PROJECT_DIR$/boluo-common-resources/src/main/java/com/jt/common/vo/EasyUIResult2.java" />
-        <option value="$PROJECT_DIR$/boluo-user-service/src/main/java/cn/tedu/user/mapper/UserMapper.java" />
-        <option value="$PROJECT_DIR$/boluo-user-service/src/main/resources/mapper/UserMapper.xml" />
         <option value="$PROJECT_DIR$/boluo-common-resources/src/main/java/com/jt/common/utils/CookieUtils.java" />
         <option value="$PROJECT_DIR$/boluo-user-service/src/test/java/cn/tedu/Node.java" />
         <option value="$PROJECT_DIR$/boluo-user-service/src/test/java/cn/tedu/BinaryTree.java" />
@@ -206,19 +204,28 @@
         <option value="$PROJECT_DIR$/boluo-user-service/src/test/java/cn/tedu/TestsEARCH.java" />
         <option value="$PROJECT_DIR$/boluo-user-service/src/test/java/cn/tedu/TestSearch.java" />
         <option value="$PROJECT_DIR$/boluo-user-service/src/test/java/cn/tedu/TestSort.java" />
-        <option value="$PROJECT_DIR$/boluo-user-service/src/main/java/cn/tedu/user/service/UserService.java" />
-        <option value="$PROJECT_DIR$/boluo-user-service/src/main/java/cn/tedu/user/controller/UserController.java" />
         <option value="$PROJECT_DIR$/boluo-common-resources/src/main/java/com/jt/common/pojo/Admin.java" />
-        <option value="$PROJECT_DIR$/boluo-admin-service/src/main/resources/mapper/AdminMapper.xml" />
-        <option value="$PROJECT_DIR$/boluo-admin-service/src/main/java/cn/tedu/admin/service/AdminService.java" />
-        <option value="$PROJECT_DIR$/boluo-admin-service/src/main/java/cn/tedu/admin/mapper/AdminMapper.java" />
-        <option value="$PROJECT_DIR$/boluo-admin-service/src/main/java/cn/tedu/admin/controller/AdminController.java" />
         <option value="$PROJECT_DIR$/boluo-animal-service/src/main/java/cn/tedu/animal/service/AnimalService.java" />
         <option value="$PROJECT_DIR$/boluo-animal-service/src/main/java/cn/tedu/animal/controller/AnimalController.java" />
         <option value="$PROJECT_DIR$/boluo-common-resources/src/main/java/com/jt/common/vo/PicUploadResult.java" />
         <option value="$PROJECT_DIR$/boluo-img-service/src/main/java/cn/tedu/img/controller/ImgController.java" />
         <option value="$PROJECT_DIR$/boluo-img-service/src/main/java/cn/tedu/img/service/ImgService.java" />
         <option value="$PROJECT_DIR$/boluo-user-service/src/main/java/cn/tedu/user/StarterUser.java" />
+        <option value="$PROJECT_DIR$/boluo-givelose-service/src/main/java/cn/tedu/givelose/controller/GiveloseController.java" />
+        <option value="$PROJECT_DIR$/boluo-common-resources/src/main/java/com/jt/common/pojo/Lose.java" />
+        <option value="$PROJECT_DIR$/boluo-givelose-service/src/main/java/cn/tedu/givelose/service/GiveloseService.java" />
+        <option value="$PROJECT_DIR$/boluo-givelose-service/src/main/resources/mapper/GiveLose.xml" />
+        <option value="$PROJECT_DIR$/boluo-common-resources/src/main/java/com/jt/common/pojo/Animal.java" />
+        <option value="$PROJECT_DIR$/boluo-animal-service/src/main/resources/mapper/AnimalMapper.xml" />
+        <option value="$PROJECT_DIR$/boluo-common-resources/src/main/java/com/jt/common/pojo/Temp.java" />
+        <option value="$PROJECT_DIR$/boluo-user-service/src/main/java/cn/tedu/user/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/boluo-user-service/src/main/java/cn/tedu/user/service/UserService.java" />
+        <option value="$PROJECT_DIR$/boluo-user-service/src/main/java/cn/tedu/user/mapper/UserMapper.java" />
+        <option value="$PROJECT_DIR$/boluo-user-service/src/main/resources/mapper/UserMapper.xml" />
+        <option value="$PROJECT_DIR$/boluo-admin-service/src/main/java/cn/tedu/admin/service/AdminService.java" />
+        <option value="$PROJECT_DIR$/boluo-admin-service/src/main/java/cn/tedu/admin/mapper/AdminMapper.java" />
+        <option value="$PROJECT_DIR$/boluo-admin-service/src/main/resources/mapper/AdminMapper.xml" />
+        <option value="$PROJECT_DIR$/boluo-admin-service/src/main/java/cn/tedu/admin/controller/AdminController.java" />
       </list>
     </option>
   </component>
@@ -237,8 +244,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-5" />
-    <option name="y" value="290" />
+    <option name="x" value="70" />
+    <option name="y" value="65" />
     <option name="width" value="1770" />
     <option name="height" value="1000" />
   </component>
@@ -250,7 +257,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -258,10 +264,303 @@
               <item name="boluo-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="boluo-parent" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="boluo-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="boluo-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="boluo-admin-service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="boluo-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="boluo-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="boluo-admin-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="boluo-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="boluo-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="boluo-admin-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="boluo-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="boluo-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="boluo-admin-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="boluo-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="boluo-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="boluo-admin-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tedu" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="boluo-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="boluo-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="boluo-admin-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tedu" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="boluo-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="boluo-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="boluo-admin-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tedu" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="boluo-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="boluo-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="boluo-admin-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tedu" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="boluo-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="boluo-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="boluo-admin-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tedu" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="boluo-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="boluo-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="boluo-admin-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="boluo-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="boluo-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="boluo-admin-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="boluo-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="boluo-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="boluo-animal-service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="boluo-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="boluo-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="boluo-animal-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="boluo-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="boluo-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="boluo-animal-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="boluo-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="boluo-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="boluo-animal-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="boluo-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="boluo-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="boluo-animal-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="animal" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="boluo-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="boluo-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="boluo-animal-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="animal" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="boluo-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="boluo-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="boluo-animal-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="animal" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="boluo-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="boluo-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="boluo-animal-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="animal" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="boluo-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="boluo-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="boluo-animal-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="boluo-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="boluo-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="boluo-animal-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="boluo-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="boluo-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="boluo-common-resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="boluo-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="boluo-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="boluo-common-resources" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="boluo-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="boluo-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="boluo-common-resources" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="boluo-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="boluo-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="boluo-common-resources" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="boluo-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="boluo-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="boluo-common-resources" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="boluo-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="boluo-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="boluo-common-resources" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="pojo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="boluo-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="boluo-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="boluo-eureka-server01" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="boluo-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="boluo-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="boluo-eureka-server01" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="boluo-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="boluo-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="boluo-eureka-server01" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="boluo-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="boluo-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="boluo-eureka-server01" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="boluo-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="boluo-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="boluo-eureka-server01" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tedu" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="boluo-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="boluo-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="boluo-img-service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="boluo-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="boluo-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="boluo-img-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="boluo-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="boluo-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="boluo-img-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="boluo-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="boluo-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="boluo-img-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="boluo-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="boluo-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="boluo-img-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tedu" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -275,7 +574,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/boluo-animal-service/src/main/java" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="F:/nginx/nginx-1.9.9/boluo" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Problems" />
@@ -322,15 +621,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StarterEServer01" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="boluo-eureka-server01" />
+    <configuration name="StarterGiveLose" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="boluo-givelose-service" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cn.tedu.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.tedu.StarterEServer01" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.tedu.StarterGiveLose" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -364,10 +663,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.StarterAdmin" />
-        <item itemvalue="Spring Boot.StarterAnimal" />
-        <item itemvalue="Spring Boot.StarterUser" />
         <item itemvalue="Spring Boot.StarterImg" />
-        <item itemvalue="Spring Boot.StarterEServer01" />
+        <item itemvalue="Spring Boot.StarterUser" />
+        <item itemvalue="Spring Boot.StarterGiveLose" />
+        <item itemvalue="Spring Boot.StarterAnimal" />
       </list>
     </recent_temporary>
   </component>
@@ -419,18 +718,26 @@
       <workItem from="1582704665612" duration="3475000" />
       <workItem from="1582719938187" duration="815000" />
       <workItem from="1582955117131" duration="3080000" />
-      <workItem from="1583049627976" duration="1257000" />
+      <workItem from="1583049627976" duration="12670000" />
+      <workItem from="1583126696280" duration="8182000" />
+      <workItem from="1583212538777" duration="4009000" />
+      <workItem from="1583225247881" duration="2300000" />
+      <workItem from="1583227766117" duration="3167000" />
+      <workItem from="1583308267001" duration="6794000" />
+      <workItem from="1583328775647" duration="3975000" />
+      <workItem from="1583393270964" duration="222000" />
+      <workItem from="1583398582888" duration="2515000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="156351000" />
+    <option name="totallyTimeSpent" value="198706000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19034852" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2124665" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -440,7 +747,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.37482318" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.44475922" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.8528572" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -504,84 +811,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/boluo-zuul-service02/src/main/java/cn/tedu/StarterZuul02.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#416#417#0" expanded="true" />
-            <element signature="e#479#480#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boluo-animal-service/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boluo-admin-service/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1593">
-          <caret line="59" column="19" selection-start-line="59" selection-start-column="19" selection-end-line="59" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boluo-zuul-service02/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="6" column="36" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boluo-animal-service/src/main/java/cn/tedu/animal/mapper/AnimalMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boluo-animal-service/src/main/resources/mapper/AnimalMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-135">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boluo-common-resources/src/main/java/com/jt/common/pojo/Temp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-173">
-          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
-          <folding>
-            <element signature="e#237#238#0" expanded="true" />
-            <element signature="e#282#283#0" expanded="true" />
-            <element signature="e#318#319#0" expanded="true" />
-            <element signature="e#352#353#0" expanded="true" />
-            <element signature="e#381#382#0" expanded="true" />
-            <element signature="e#426#427#0" expanded="true" />
-            <element signature="e#462#463#0" expanded="true" />
-            <element signature="e#498#499#0" expanded="true" />
-            <element signature="e#529#530#0" expanded="true" />
-            <element signature="e#578#579#0" expanded="true" />
-            <element signature="e#618#619#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boluo-common-resources/src/main/java/com/jt/common/vo/EasyUIResult2.java" />
-    <entry file="file://$PROJECT_DIR$/boluo-common-resources/src/main/java/com/jt/common/utils/CookieUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="30" column="30" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/boluo-common-resources/src/main/java/com/jt/common/vo/EasyUIResult.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1512">
@@ -652,29 +881,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/boluo-eureka-server01/src/main/java/cn/tedu/StarterEServer01.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-          <folding>
-            <element signature="e#348#349#0" expanded="true" />
-            <element signature="e#414#415#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boluo-animal-service/src/main/java/cn/tedu/animal/StarterAnimal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#415#416#0" expanded="true" />
-            <element signature="e#478#479#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis-spring/1.3.1/mybatis-spring-1.3.1-sources.jar!/org/mybatis/spring/MyBatisExceptionTranslator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1323">
@@ -682,110 +888,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/boluo-admin-service/src/main/java/cn/tedu/StarterAdmin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#406#407#0" expanded="true" />
-            <element signature="e#468#469#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boluo-admin-service/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boluo-admin-service/src/main/resources/mapper/AdminMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="7" column="49" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boluo-admin-service/src/main/java/cn/tedu/admin/mapper/AdminMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="12" column="57" selection-start-line="12" selection-start-column="57" selection-end-line="12" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boluo-admin-service/src/main/java/cn/tedu/admin/service/AdminService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boluo-admin-service/src/main/java/cn/tedu/admin/controller/AdminController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boluo-givelose-service/src/main/resources/mapper/GiveLose.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boluo-givelose-service/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boluo-givelose-service/src/main/java/cn/tedu/givelose/service/GiveloseService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding>
-            <element signature="e#911#912#0" expanded="true" />
-            <element signature="e#959#960#0" expanded="true" />
-            <element signature="e#1010#1011#0" expanded="true" />
-            <element signature="e#1045#1046#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boluo-img-service/src/main/java/cn/tedu/StarterImg.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
-          <folding>
-            <element signature="e#319#320#0" expanded="true" />
-            <element signature="e#379#380#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/boluo-img-service/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boluo-givelose-service/src/main/java/cn/tedu/givelose/controller/GiveloseController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -800,20 +906,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="4" column="25" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boluo-user-service/src/main/java/cn/tedu/user/mapper/UserMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="13" column="40" lean-forward="true" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boluo-common-resources/src/main/java/com/jt/common/pojo/Admin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="36" column="52" lean-forward="true" selection-start-line="36" selection-start-column="52" selection-end-line="36" selection-end-column="52" />
         </state>
       </provider>
     </entry>
@@ -837,29 +929,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boluo-common-resources/src/main/java/com/jt/common/pojo/Animal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
-          <folding>
-            <element signature="method#toString#0;class#Animal#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boluo-user-service/src/main/java/cn/tedu/user/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1944">
-          <caret line="88" column="34" selection-start-line="88" selection-start-column="34" selection-end-line="88" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/boluo-img-service/src/main/java/cn/tedu/img/controller/ImgController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
@@ -870,29 +939,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/boluo-user-service/src/main/java/cn/tedu/user/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="891">
-          <caret line="40" column="59" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2924#2925#0" expanded="true" />
-            <element signature="e#2970#2971#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/boluo-common-resources/src/main/java/com/jt/common/pojo/Give.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="675">
           <caret line="41" selection-start-line="41" selection-end-line="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boluo-user-service/src/main/resources/mapper/UserMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="864">
-          <caret line="32" column="70" selection-start-line="32" selection-start-column="70" selection-end-line="32" selection-end-column="70" />
         </state>
       </provider>
     </entry>
@@ -906,28 +956,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/boluo-animal-service/src/main/java/cn/tedu/animal/controller/AnimalController.java">
+    <entry file="file://$PROJECT_DIR$/boluo-user-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boluo-zuul-service02/src/main/java/cn/tedu/StarterZuul02.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="25" column="36" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="36" />
+        <state relative-caret-position="297">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
           <folding>
-            <element signature="e#710#711#0" expanded="true" />
-            <element signature="e#762#763#0" expanded="true" />
-            <element signature="e#892#893#0" expanded="true" />
-            <element signature="e#942#943#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#416#417#0" expanded="true" />
+            <element signature="e#479#480#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/boluo-animal-service/src/main/java/cn/tedu/animal/service/AnimalService.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.4/mybatis-3.4.4-sources.jar!/org/apache/ibatis/binding/MapperMethod.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#906#907#0" expanded="true" />
-            <element signature="e#958#959#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="138">
+          <caret line="201" column="14" selection-start-line="201" selection-start-column="14" selection-end-line="201" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -938,17 +985,270 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/boluo-user-service/pom.xml">
+    <entry file="file://$PROJECT_DIR$/boluo-givelose-service/src/main/java/cn/tedu/givelose/controller/GiveloseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1215">
+          <caret line="61" column="20" selection-start-line="61" selection-start-column="20" selection-end-line="61" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1364#1365#0" expanded="true" />
+            <element signature="e#1414#1415#0" expanded="true" />
+            <element signature="e#1545#1546#0" expanded="true" />
+            <element signature="e#1591#1592#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boluo-givelose-service/src/main/java/cn/tedu/givelose/mapper/GiveloseMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boluo-givelose-service/src/main/java/cn/tedu/givelose/service/GiveloseService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1485">
+          <caret line="69" column="43" selection-start-line="69" selection-start-column="43" selection-end-line="69" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boluo-eureka-server01/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boluo-common-resources/src/main/java/com/jt/common/pojo/Lose.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="13" column="43" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boluo-givelose-service/src/main/resources/mapper/GiveLose.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2079">
+          <caret line="77" selection-start-line="77" selection-end-line="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boluo-common-resources/src/main/java/com/jt/common/pojo/Animal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1404">
+          <caret line="100" selection-start-line="100" selection-end-line="100" />
+          <folding>
+            <element signature="method#toString#0;class#Animal#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boluo-givelose-service/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boluo-givelose-service/src/main/java/cn/tedu/StarterGiveLose.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boluo-animal-service/src/main/java/cn/tedu/animal/StarterAnimal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#415#416#0" expanded="true" />
+            <element signature="e#478#479#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boluo-admin-service/src/main/java/cn/tedu/StarterAdmin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#406#407#0" expanded="true" />
+            <element signature="e#468#469#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boluo-user-service/src/main/java/cn/tedu/user/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2268">
+          <caret line="100" column="21" selection-start-line="100" selection-start-column="21" selection-end-line="100" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boluo-user-service/src/main/java/cn/tedu/user/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2889">
+          <caret line="120" column="37" selection-start-line="120" selection-start-column="37" selection-end-line="120" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boluo-user-service/src/main/java/cn/tedu/user/mapper/UserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/boluo-user-service/src/main/java/cn/tedu/user/StarterUser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        <state relative-caret-position="216">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#454#455#0" expanded="true" />
-            <element signature="e#515#516#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boluo-user-service/src/main/resources/mapper/UserMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1728">
+          <caret line="64" column="28" selection-start-line="64" selection-start-column="28" selection-end-line="64" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boluo-common-resources/src/main/java/com/jt/common/pojo/Temp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="891">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
+          <folding>
+            <element signature="method#toString#0;class#Temp#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boluo-eureka-server01/src/main/java/cn/tedu/StarterEServer01.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="e#348#349#0" expanded="true" />
+            <element signature="e#414#415#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boluo-admin-service/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boluo-common-resources/src/main/java/com/jt/common/pojo/Admin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boluo-img-service/src/main/java/cn/tedu/StarterImg.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+          <folding>
+            <element signature="e#319#320#0" expanded="true" />
+            <element signature="e#379#380#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boluo-animal-service/src/main/java/cn/tedu/animal/service/AnimalService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#906#907#0" expanded="true" />
+            <element signature="e#958#959#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boluo-animal-service/src/main/java/cn/tedu/animal/mapper/AnimalMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boluo-animal-service/src/main/resources/mapper/AnimalMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="11" column="52" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boluo-admin-service/src/main/java/cn/tedu/admin/mapper/AdminMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="21" column="44" lean-forward="true" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boluo-admin-service/src/main/resources/mapper/AdminMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="30" column="34" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boluo-animal-service/src/main/java/cn/tedu/animal/controller/AnimalController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="27" column="43" lean-forward="true" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
+          <folding>
+            <element signature="e#710#711#0" expanded="true" />
+            <element signature="e#762#763#0" expanded="true" />
+            <element signature="e#892#893#0" expanded="true" />
+            <element signature="e#942#943#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boluo-admin-service/src/main/java/cn/tedu/admin/service/AdminService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="55" column="5" lean-forward="true" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1334#1335#0" expanded="true" />
+            <element signature="e#1351#1352#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boluo-admin-service/src/main/java/cn/tedu/admin/controller/AdminController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="54" column="32" lean-forward="true" selection-start-line="54" selection-start-column="32" selection-end-line="54" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1009#1010#0" expanded="true" />
+            <element signature="e#1059#1060#0" expanded="true" />
+            <element signature="e#1197#1198#0" expanded="true" />
+            <element signature="e#1247#1248#0" expanded="true" />
           </folding>
         </state>
       </provider>

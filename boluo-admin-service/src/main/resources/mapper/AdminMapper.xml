@@ -11,8 +11,29 @@
         where admin_name=#{adminName} and admin_password=#{adminPassword};
     </select>
 
+    <!--查询用户数量-->
+    <select id="selectUserCount" resultType="Integer">
+        select count(user_id)
+        from user;
+    </select>
+
+    <!--查看用户信息-->
+    <select id="selectUserByPage" resultType="User">
+        select *
+        from user
+        limit #{start},#{rows};
+    </select>
+
+    <!--删除用户信息-->
+    <delete id="deleteUserByUserId" parameterType="Integer">
+        delete
+        from user
+        where user_id = #{userId};
+    </delete>
+
     <select id="selectTempCount" resultType="Integer">
-        select count(temp_id) from temp;
+        select count(temp_id)
+        from temp;
     </select>
 
     <select id="selectTempByPage" resultType="Temp">

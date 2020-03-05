@@ -55,15 +55,26 @@
         where lose_id = #{loseId}
     </select>
 
+    <!-- 往lose表中添加丢失动物找寻信息 -->
     <insert id="insertLose" parameterType="Lose">
         insert into lose(
             lose_title,
             lose_image,
-            lose_info
+            lose_info,
+            lose_type,
+            lose_create_time,
+            lose_address,
+            lose_phone,
+            lose_name
         )values(
             #{loseTitle},
             #{loseImage},
-            #{loseInfo}
+            #{loseInfo},
+            #{loseType},
+            #{loseCreateTime},
+            #{loseAddress},
+            #{losePhone},
+            #{loseName}
         )
     </insert>
 

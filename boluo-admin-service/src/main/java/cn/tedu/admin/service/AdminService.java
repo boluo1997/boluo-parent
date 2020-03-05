@@ -36,6 +36,25 @@ public class AdminService {
         }
     }
 
+    //查看用户信息
+    public EasyUIResult queryPageUser(Integer page, Integer rows) {
+        EasyUIResult result = new EasyUIResult();
+
+        Integer total = am.selectUserCount();
+        result.setTotal(total);
+
+        //封装返回分页数据rows List<Animal>
+        Integer start = (page-1)*rows;
+        List<User> pList = am.selectUserByPage(start,rows);
+        result.setRows(pList);
+        return result;
+    }
+
+    //删除用户
+    public void deleteUser(Integer userId) {
+        am.deleteUserByUserId(userId);
+    }
+
     //查看想领养动物人员的名单
     public EasyUIResult queryPageTemp(Integer page, Integer rows) {
         //准备一个返回对象

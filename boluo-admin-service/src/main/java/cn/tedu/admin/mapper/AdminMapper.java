@@ -12,6 +12,15 @@ public interface AdminMapper {
     //admin login function
     Admin selectAdminByAdminNameAndPassword(Admin admin);
 
+    //查询用户信息数量
+    Integer selectUserCount();
+
+    //查看用户信息
+    List<User> selectUserByPage(@Param("start") Integer start,@Param("rows") Integer rows);
+
+    //删除用户信息
+    void deleteUserByUserId(Integer userId);
+
     Integer selectTempCount();
 
     //查看所有想领养动物的人员名单
@@ -27,7 +36,6 @@ public interface AdminMapper {
 
     //批准成为志愿者
     void updateVolunteer(Integer userId);
-
 
 
 }
