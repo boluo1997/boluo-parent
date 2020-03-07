@@ -2,6 +2,7 @@ package cn.tedu.givelose.controller;
 
 import cn.tedu.givelose.service.GiveloseService;
 import com.jt.common.pojo.Give;
+import com.jt.common.pojo.LeaveMessage;
 import com.jt.common.pojo.Lose;
 import com.jt.common.vo.EasyUIResult;
 import com.jt.common.vo.SysResult;
@@ -68,5 +69,22 @@ public class GiveloseController {
         }
     }
 
+    //留言功能
+    @RequestMapping("lose/message")
+    public SysResult addLeaveMessage(LeaveMessage leaveMessage){
+        try{
+            gs.addLeaveMessage(leaveMessage);
+            return SysResult.ok();
+        }catch (Exception e){
+            e.printStackTrace();
+            return SysResult.build(201,"留言失败!",null);
+        }
+    }
+
+    //留言展示--分页
+    @RequestMapping("lose/show")
+    public EasyUIResult queryPageMessage(Integer page,Integer rows,Integer loseId){
+        return gs.queryPageMessage(page,rows,loseId);
+    }
 
 }

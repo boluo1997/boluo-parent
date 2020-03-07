@@ -2,6 +2,7 @@ package cn.tedu.givelose.service;
 
 import cn.tedu.givelose.mapper.GiveloseMapper;
 import com.jt.common.pojo.Give;
+import com.jt.common.pojo.LeaveMessage;
 import com.jt.common.pojo.Lose;
 import com.jt.common.vo.EasyUIResult;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -69,5 +70,26 @@ public class GiveloseService {
     public void addLose(Lose lose) {
         lose.setLoseCreateTime(new Date());
         gm.insertLose(lose);
+    }
+
+    //留言功能
+    public void addLeaveMessage(LeaveMessage leaveMessage) {
+        gm.insertLeaveMessage(leaveMessage);
+    }
+
+    //留言展示--分页
+    public EasyUIResult queryPageMessage(Integer page, Integer rows,Integer loseId) {
+        //准备一个返回对象
+        EasyUIResult result = new EasyUIResult();
+        //封装total
+        Integer total = gm.selectLeaveMessageCount(loseId);
+        result.setTotal(total);
+
+        //封装返回分页数据rows List<Animal>
+        Integer start = (page-1)*rows;
+        List<LeaveMessage> pList = gm.selectLeaveMessageByPage(start,rows,loseId);
+        result.setRows(pList);
+
+        return result;
     }
 }

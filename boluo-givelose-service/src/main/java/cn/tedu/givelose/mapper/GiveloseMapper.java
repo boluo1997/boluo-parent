@@ -1,6 +1,7 @@
 package cn.tedu.givelose.mapper;
 
 import com.jt.common.pojo.Give;
+import com.jt.common.pojo.LeaveMessage;
 import com.jt.common.pojo.Lose;
 import org.apache.ibatis.annotations.Param;
 
@@ -19,8 +20,6 @@ public interface GiveloseMapper {
     //添加送养信息
     void insertGive(Give give);
 
-
-
     Integer selectLoseCount();
 
     //分页查询丢失动物找寻信息
@@ -31,4 +30,14 @@ public interface GiveloseMapper {
 
     //添加丢失动物找寻信息
     void insertLose(Lose lose);
+
+    //留言功能
+    void insertLeaveMessage(LeaveMessage leaveMessage);
+
+    //留言查看
+    Integer selectLeaveMessageCount(Integer loseId);
+
+    //留言查看
+    List<LeaveMessage> selectLeaveMessageByPage(@Param("start") Integer start,@Param("rows") Integer rows,@Param("loseId") Integer loseId);
+
 }

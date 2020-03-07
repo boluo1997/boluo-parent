@@ -98,18 +98,26 @@ public class UserController {
     @RequestMapping("adopt")
     public SysResult adoptAnimal(Integer userId,Integer animalId,String userName){
 
-        if(us.existUserId(userId,animalId)==null){
+        if(us.existAnimalIdInTemp(animalId)!=null&&us.existUserIdInTemp(userId)==null){   //如果temp表中已经有该动物ID,说明该动物已经被人领养,别的用户不能再领养
+            //System.out.println("203");
+            return SysResult.build(203,"该动物已经被其他人领养",null);
+        }else if(us.existUserIdInTemp(userId)!=null&&us.existAnimalIdInTemp(animalId)==null){     //如果temp表中已经有该用户ID,就不允许该用户再领养其他的动物
+            //System.out.println("204");
+            return SysResult.build(204,"每人只能领养一个动物",null);
+        }else if(us.existUserId(userId,animalId)==null){  //temp表中不存在userId和animalId,说明该动物处于无人领养状态
             try{
                 us.adoptAnimal(userId,animalId,userName);
+                //System.out.println("200");
                 return SysResult.ok();
             }catch (Exception e){
                 e.printStackTrace();
+                //System.out.println("201");
                 return SysResult.build(201,"失败!",null);
             }
-        }else {     //返回的有数据
+        }else {     //如果temp表中存在userId和animalId,就说明一个用户点了两次,显示不能重复申请
+            //System.out.println("202");
             return SysResult.build(202,"不能重复申请",null);
         }
-
 
     }
 

@@ -30,6 +30,12 @@ public interface UserMapper {
     //把领养信息暂时存入领养表中
     void insertTemp(@Param("userId") Integer userId,@Param("animalId") Integer animalId,@Param("userName")String userName);
 
+    //判断temp表中是否有animalId
+    Temp selectStatusByAnimalId(Integer animalId);
+
+    //判断temp表中是否有userId
+    Temp selectStatusByUserId(Integer userId);
+
     Integer selectAdoptCount();
 
     //查看自己被批准的可以领养的动物
@@ -40,5 +46,6 @@ public interface UserMapper {
 
     //判断是否重复申请
     Temp selectStatusByUserIdAndAnimalId(@Param("userId") Integer userId,@Param("animalId") Integer animalId);
+
 
 }

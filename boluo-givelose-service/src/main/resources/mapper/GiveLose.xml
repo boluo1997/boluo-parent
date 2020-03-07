@@ -78,5 +78,33 @@
         )
     </insert>
 
+    <!--留言功能-->
+    <insert id="insertLeaveMessage" parameterType="LeaveMessage">
+        insert into leavemessage(
+            lose_id,
+            user_name,
+            leave_message
+        )
+        values(
+            #{loseId},
+            #{userName},
+            #{leaveMessage}
+        )
+    </insert>
+
+    <!--留言查看-->
+    <select id="selectLeaveMessageCount" resultType="Integer">
+        select count(leave_id)
+        from leavemessage
+        where lose_id = #{loseId};
+    </select>
+
+    <!--留言查看-->
+    <select id="selectLeaveMessageByPage" parameterType="Integer" resultType="LeaveMessage">
+        select *
+        from leavemessage
+        where lose_id = #{loseId}
+        limit #{start},#{rows};
+    </select>
 
 </mapper>

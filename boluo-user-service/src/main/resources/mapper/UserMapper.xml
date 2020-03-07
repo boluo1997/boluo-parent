@@ -54,6 +54,20 @@
         where user_id = #{userId};
     </delete>
 
+    <!--查看temp表中是否有animalId-->
+    <select id="selectStatusByAnimalId" resultType="Temp">
+        select *
+        from temp
+        where animal_id = #{animalId};
+    </select>
+
+    <!--查看temp表中是否有userId-->
+    <select id="selectStatusByUserId" resultType="Temp">
+        select *
+        from temp
+        where user_id = #{userId};
+    </select>
+
     <!--查看是否重复申请-->
     <select id="selectStatusByUserIdAndAnimalId" parameterType="Integer" resultType="Temp">
         select *

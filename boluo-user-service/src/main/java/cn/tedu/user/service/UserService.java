@@ -42,8 +42,6 @@ public class UserService {
             user.setUserPassword(MD5Util.md5(user.getUserPassword()));
             User exist = um.selectUserByUserNameAndPassword(user);
 
-            System.out.println(exist+"第一个username");
-
             if(exist == null){
                 //登录失败
                 System.out.println("登录失败");
@@ -65,8 +63,6 @@ public class UserService {
 
             //user.setUserPassword(MD5Util.md5(user.getUserPassword()));
             User exist = um.selectUserByUserNameAndPassword(user);
-
-            System.out.println(exist);
 
             if(exist == null){
                 //登录失败
@@ -116,6 +112,18 @@ public class UserService {
         um.insertTemp(userId,animalId,userName);
     }
 
+    //查看该动物有没有被其他人申请领养
+    public Temp existAnimalIdInTemp(Integer animalId) {
+        Temp exist = um.selectStatusByAnimalId(animalId);
+        return exist;
+    }
+
+    //查看该用户有没有领养其他动物
+    public Temp existUserIdInTemp(Integer userId) {
+        Temp exist = um.selectStatusByUserId(userId);
+        return exist;
+    }
+
     //查看是否重复申请
     public Temp existUserId(Integer userId, Integer animalId){
         Temp exist = um.selectStatusByUserIdAndAnimalId(userId,animalId);
@@ -142,6 +150,9 @@ public class UserService {
     public void applyVolunteer(Integer userId) {
         um.updateUserById(userId);
     }
+
+
+
 }
 
 
