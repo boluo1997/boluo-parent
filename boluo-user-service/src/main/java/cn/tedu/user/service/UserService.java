@@ -1,15 +1,17 @@
 package cn.tedu.user.service;
 
 import cn.tedu.user.mapper.UserMapper;
+import com.jt.common.pojo.Animal;
 import com.jt.common.pojo.Temp;
 import com.jt.common.pojo.User;
+import com.jt.common.pojo.Volunteer;
 import com.jt.common.utils.MD5Util;
 import com.jt.common.vo.EasyUIResult;
-import com.jt.common.vo.SysResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+
 
 @Service
 public class UserService {
@@ -130,19 +132,14 @@ public class UserService {
         return exist;
     }
 
-    //查看自己被批准可以领养的动物
-    public EasyUIResult queryPageAdopt(Integer page, Integer rows, Integer userId) {
-        //准备一个返回对象
-        EasyUIResult result = new EasyUIResult();
-        //封装total
-        Integer total = um.selectAdoptCount();
-        result.setTotal(total);
+    //查看自己正在申请领养的动物
+    public Animal queryTemp(Integer userId) {
+        return um.selectTemp(userId);
+    }
 
-        //封装返回分页数据rows List<Animal>
-        Integer start = (page-1)*rows;
-        List<User> pList = um.selectAdoptByPage(start,rows,userId);
-        result.setRows(pList);
-        return result;
+    //查看自己被批准可以领养的动物
+    public Animal queryAdopt(Integer userId) {
+        return um.selectAdoptByUserId(userId);
     }
 
 
@@ -151,8 +148,15 @@ public class UserService {
         um.updateUserById(userId);
     }
 
+    //申请成为志愿者       往volunteer表中插入数据
+    public void insertVolunteer(Volunteer volunteer) {
+        um.insertVolunteer(volunteer);
+    }
 
-
+    //查看自己的志愿者状态
+    public Volunteer checkVolunteer(Integer userId) {
+        return um.checkVolunteer(userId);
+    }
 }
 
 

@@ -57,7 +57,7 @@ public class AdminController {
         return as.queryPageTemp(page,rows);
     }
 
-    //批准领养                     把伪领养表中的内容写到领养表中  并加入批准通过的表中
+    //批准领养              把伪领养表中的内容写到领养表中  并加入批准通过的表中
     @RequestMapping("pass/adopt")
     public SysResult passAdopt(Adopt adopt){
         //接收的是页面中显示的userId和animalId     可以在此处加一个后端校验(service)
@@ -95,6 +95,10 @@ public class AdminController {
 
     //拒绝成为志愿者
     
-
+    //查看志愿者名单
+    @RequestMapping("queryAlreadyVolunteer")
+    public EasyUIResult queryPageAlreadyVolunteer(Integer page, Integer rows){
+        return as.queryPageAlreadyVolunteer(page,rows);
+    }
 
 }

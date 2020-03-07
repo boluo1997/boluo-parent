@@ -1,7 +1,9 @@
 package cn.tedu.user.controller;
 
 import cn.tedu.user.service.UserService;
+import com.jt.common.pojo.Animal;
 import com.jt.common.pojo.User;
+import com.jt.common.pojo.Volunteer;
 import com.jt.common.utils.CookieUtils;
 import com.jt.common.vo.EasyUIResult;
 import com.jt.common.vo.SysResult;
@@ -13,6 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
 
 @RestController
 @RequestMapping("user")
@@ -118,14 +121,19 @@ public class UserController {
             //System.out.println("202");
             return SysResult.build(202,"不能重复申请",null);
         }
-
     }
 
 
+    //查看自己正在申请领养的动物
+    @RequestMapping("check/temp")
+    public Animal querTemp(Integer userId){
+        return us.queryTemp(userId);
+    }
+
     //查看自己被批准的可以领养的动物
     @RequestMapping("check/adopt")
-    public EasyUIResult queryPageAdopt(Integer page, Integer rows, Integer userId){
-        return us.queryPageAdopt(page,rows,userId);
+    public Animal queryAdopt(Integer userId){
+        return us.queryAdopt(userId);
     }
 
 
@@ -141,6 +149,23 @@ public class UserController {
         }
     }
 
+    //申请成为志愿者       往volunteer表中插入数据
+    @RequestMapping("insertVolunteer")
+    public SysResult insertVolunteer(Volunteer volunteer){
+        try{
+            us.insertVolunteer(volunteer);
+            return SysResult.ok();
+        }catch (Exception e){
+            e.printStackTrace();
+            return SysResult.build(201,"申请成为志愿者失败!",null);
+        }
+    }
+
+    //查看自己的志愿者状态
+    @RequestMapping("check/volunteer")
+    public Volunteer checkVolunteer(Integer userId) {
+        return us.checkVolunteer(userId);
+    }
 }
 
 

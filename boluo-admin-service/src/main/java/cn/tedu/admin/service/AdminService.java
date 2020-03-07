@@ -4,6 +4,7 @@ import cn.tedu.admin.mapper.AdminMapper;
 import com.jt.common.pojo.Admin;
 import com.jt.common.pojo.Adopt;
 import com.jt.common.pojo.User;
+import com.jt.common.pojo.Volunteer;
 import com.jt.common.vo.EasyUIResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -55,7 +56,7 @@ public class AdminService {
         am.deleteUserByUserId(userId);
     }
 
-    //查看想领养动物人员的名单
+    //查看想领养动物用户的名单
     public EasyUIResult queryPageTemp(Integer page, Integer rows) {
         //准备一个返回对象
         EasyUIResult result = new EasyUIResult();
@@ -71,11 +72,13 @@ public class AdminService {
     }
 
 
-    //批准领养      把伪领养表中的内容写到领养表中  并加入批准通过的表中
+    //批准领养      把伪领养表中的内容写到领养表中  并把temp表中的状态码改为1
     public void passAdopt(Adopt adopt) {
         //userId和animalId就是伪领养表中的内容
         adopt.setAdoptCreateTime(new Date());
         am.insertAdopt(adopt);
+        Integer userId = adopt.getUserId();
+        am.updateTemp(userId);
     }
 
 
@@ -89,7 +92,7 @@ public class AdminService {
 
         //封装返回分页数据rows List<Animal>
         Integer start = (page-1)*rows;
-        List<User> pList = am.selectVolunteerByPage(start,rows);
+        List<Volunteer> pList = am.selectVolunteerByPage(start,rows);
         result.setRows(pList);
         return result;
     }
@@ -97,6 +100,21 @@ public class AdminService {
     //批准成为志愿者
     public void passVolunteer(Integer userId) {
         am.updateVolunteer(userId);
+    }
+
+    //查看志愿者名单
+    public EasyUIResult queryPageAlreadyVolunteer(Integer page, Integer rows) {
+        //准备一个返回对象
+        EasyUIResult result = new EasyUIResult();
+        //封装total
+        Integer total = am.selectAlreadyVolunteerCount();
+        result.setTotal(total);
+
+        //封装返回分页数据rows List<Volunteer>
+        Integer start = (page-1)*rows;
+        List<Volunteer> pList = am.selectAlreadyVolunteerByPage(start,rows);
+        result.setRows(pList);
+        return result;
     }
 
 }

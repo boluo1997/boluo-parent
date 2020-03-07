@@ -88,16 +88,28 @@
         )
     </insert>
 
+    <!--查看自己正在申请领养的动物-->
+    <select id="selectTemp" parameterType="Integer" resultType="Animal">
+        SELECT animal_id,animal_name,give_name,give_phone
+            FROM animal
+            WHERE animal_id = (SELECT animal_id
+                                FROM temp
+                                WHERE user_id = #{userId}
+                                );
+    </select>
+
     <select id = "selectAdoptCount" resultType="Integer">
         select count(user_id) from adopt;
     </select>
 
     <!-- 查看自己被批准的可以领养的动物 -->
-    <select id="selectAdoptByPage" resultType="Adopt">
-        select *
-        from adopt
-        where user_id = #{userId}
-        limit #{start},#{rows};
+    <select id="selectAdoptByUserId" parameterType="Integer" resultType="Animal">
+        SELECT *
+        FROM animal
+        WHERE animal_id = (SELECT animal_id
+                            FROM adopt
+                            WHERE user_id = #{userId}
+		                    );
     </select>
 
     <!-- 申请成为志愿者 -->
@@ -106,6 +118,35 @@
         user_type = 2
         where user_id = #{userId};
     </update>
+
+    <!--申请成为志愿者-往volunteer表中插入数据-->
+    <insert id="insertVolunteer" parameterType="Volunteer">
+        insert into volunteer(
+            user_id,
+            volunteer_name,
+            volunteer_gender,
+            volunteer_age,
+            volunteer_address,
+            volunteer_phone,
+            volunteer_image
+        )values (
+            #{userId},
+            #{volunteerName},
+            #{volunteerGender},
+            #{volunteerAge},
+            #{volunteerAddress},
+            #{volunteerPhone},
+            #{volunteerImage}
+        );
+    </insert>
+
+    <!--查看自己的志愿者状态-->
+    <select id="checkVolunteer" parameterType="Integer" resultType="Volunteer">
+        select *
+        from volunteer
+        where user_id = #{userId};
+    </select>
+
 </mapper>
 
 

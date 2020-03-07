@@ -3,6 +3,7 @@ package cn.tedu.admin.mapper;
 import com.jt.common.pojo.Admin;
 import com.jt.common.pojo.Adopt;
 import com.jt.common.pojo.User;
+import com.jt.common.pojo.Volunteer;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
@@ -29,13 +30,22 @@ public interface AdminMapper {
     //批准领养      把伪领养表中的内容写到领养表中  并加入批准通过的表中
     void insertAdopt(Adopt adopt);
 
+    //批准领养之后,改变temp表的状态码
+    void updateTemp(Integer userId);
+
     Integer selectVolunteerCount();
 
     //查看想成为志愿者的人的名单     分页查询
-    List<User> selectVolunteerByPage(@Param("start") Integer start,@Param("rows") Integer rows);
+    List<Volunteer> selectVolunteerByPage(@Param("start") Integer start,@Param("rows") Integer rows);
 
     //批准成为志愿者
     void updateVolunteer(Integer userId);
+
+    //查看志愿者名单
+    Integer selectAlreadyVolunteerCount();
+
+    //查看志愿者名单
+    List<Volunteer> selectAlreadyVolunteerByPage(@Param("start") Integer start,@Param("rows") Integer rows);
 
 
 }

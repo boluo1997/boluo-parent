@@ -31,17 +31,23 @@
         where user_id = #{userId};
     </delete>
 
+    <!--查看想领养的动物信息-temp表-->
     <select id="selectTempCount" resultType="Integer">
         select count(temp_id)
         from temp;
     </select>
 
+    <!--查看想领养的动物信息-temp表-分页-->
     <select id="selectTempByPage" resultType="Temp">
         select *
         from temp
+        where status_id = 0
         limit #{start},#{rows};
     </select>
 
+
+
+    <!--批准用户领养动物-->
     <insert id="insertAdopt" parameterType="Adopt">
         insert into adopt(
             user_id,
@@ -54,24 +60,43 @@
         )
     </insert>
 
+    <update id="updateTemp">
+        update temp
+        set status_id = 1
+        where user_id = #{userId};
+    </update>
+
     <select id="selectVolunteerCount" resultType="Integer">
-        select count(user_id) from user;
+        select count(volunteer_id) from volunteer;
     </select>
 
     <!-- 查看想要成为志愿者的人的名单     分页查询 -->
-    <select id="selectVolunteerByPage" resultType="User">
+    <select id="selectVolunteerByPage" resultType="Volunteer">
         select *
-        from user
-        where user_type = 2
-        limit #{start},#{rows}
+        from volunteer
+        where volunteer_status = 0
+        limit #{start},#{rows};
     </select>
+
 
     <!-- 批准成为志愿者 -->
     <update id="updateVolunteer" parameterType="Integer">
-        update user
+        update volunteer
         set
-        user_type = 3
+        volunteer_status = 1
         where user_id = #{userId};
     </update>
+
+    <select id="selectAlreadyVolunteerCount" resultType="Integer">
+        select count(volunteer_id) from volunteer;
+    </select>
+
+    <!--查看志愿者名单-->
+    <select id="selectAlreadyVolunteerByPage" resultType="Volunteer">
+        select *
+        from volunteer
+        where volunteer_status = 1
+        limit #{start},#{rows};
+    </select>
 
 </mapper>

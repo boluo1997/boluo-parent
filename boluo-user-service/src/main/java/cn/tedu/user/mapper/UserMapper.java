@@ -1,11 +1,10 @@
 package cn.tedu.user.mapper;
 
-import com.jt.common.pojo.Adopt;
-import com.jt.common.pojo.Temp;
-import com.jt.common.pojo.User;
+import com.jt.common.pojo.*;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
+import java.util.Objects;
 
 public interface UserMapper {
     int selectUserCountByUserName(String userName);
@@ -30,22 +29,27 @@ public interface UserMapper {
     //把领养信息暂时存入领养表中
     void insertTemp(@Param("userId") Integer userId,@Param("animalId") Integer animalId,@Param("userName")String userName);
 
+    //判断是否重复申请
+    Temp selectStatusByUserIdAndAnimalId(@Param("userId") Integer userId,@Param("animalId") Integer animalId);
+
     //判断temp表中是否有animalId
     Temp selectStatusByAnimalId(Integer animalId);
 
     //判断temp表中是否有userId
     Temp selectStatusByUserId(Integer userId);
 
-    Integer selectAdoptCount();
+    //查看自己正在申请领养的动物
+    Animal selectTemp(Integer userId);
 
     //查看自己被批准的可以领养的动物
-    List<User> selectAdoptByPage(@Param("start") Integer start,@Param("rows") Integer rows,@Param("userId") Integer userId);
+    Animal selectAdoptByUserId(Integer userId);
 
     //申请成为志愿者
     void updateUserById(Integer userId);
 
-    //判断是否重复申请
-    Temp selectStatusByUserIdAndAnimalId(@Param("userId") Integer userId,@Param("animalId") Integer animalId);
+    //往volunteer表中插入数据
+    void insertVolunteer(Volunteer volunteer);
 
-
+    //查看自己的志愿者状态
+    Volunteer checkVolunteer(Integer userId);
 }
