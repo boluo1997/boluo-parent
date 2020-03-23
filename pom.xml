@@ -17,6 +17,7 @@
       <module>boluo-img-service</module>
       <module>boluo-zuul-service02</module>
     <module>boluo-admin-service</module>
+      <module>boluo-search-service</module>
   </modules>
 
   <name>boluo-parent</name>
