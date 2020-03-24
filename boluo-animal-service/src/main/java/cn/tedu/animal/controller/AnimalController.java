@@ -50,7 +50,7 @@ public class AnimalController {
     @RequestMapping("test")
     public void test(){
         List<String> list = as.test();
-        //Collections.sort(list);
+        Collections.sort(list);
         /*list.sort(new Comparator<String>() {
             @Override
             public int compare(String o1, String o2) {
