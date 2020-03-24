@@ -9,6 +9,10 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+
 @RestController
 @RequestMapping("animal")
 public class AnimalController {
@@ -41,6 +45,18 @@ public class AnimalController {
             return SysResult.build(201,"新增失败",null);
 
         }
+    }
+
+    @RequestMapping("test")
+    public void test(){
+        List<String> list = as.test();
+        //Collections.sort(list);
+        /*list.sort(new Comparator<String>() {
+            @Override
+            public int compare(String o1, String o2) {
+                return 0;
+            }
+        });*/
     }
 
 

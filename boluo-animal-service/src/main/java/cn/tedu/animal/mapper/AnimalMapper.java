@@ -17,4 +17,6 @@ public interface AnimalMapper {
     //管理员添加动物
     void insertAnimal(Animal animal);
 
+
+    List<String> test();
 }

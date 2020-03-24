@@ -42,6 +42,12 @@ public class AnimalService {
         am.insertAnimal(animal);
 
     }
+
+
+    public List<String> test() {
+        List<String> list = am.test();
+        return list;
+    }
 }
 
 

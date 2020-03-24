@@ -44,6 +44,11 @@
         )
     </insert>
 
+    <select id="test">
+        select animal_name
+        from animal
+    </select>
+
 </mapper>
 
 
