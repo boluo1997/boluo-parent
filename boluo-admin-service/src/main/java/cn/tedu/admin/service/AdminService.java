@@ -34,6 +34,50 @@ public class AdminService {
         }
     }
 
+    //维修人员登录 获取用户名
+    public String doLogin1(Fixer fixer) {
+        try{
+            //user.setUserPassword(MD5Util.md5(user.getUserPassword()));
+            Fixer exist = am.selectFixerByUserNameAndPassword(fixer);
+
+            if(exist == null){
+                //登录失败
+                System.out.println("登录失败");
+                return "";
+            }else {
+                //登录成功,存储user_name
+                String ticket = fixer.getUserName();
+                return ticket;
+            }
+        }catch (Exception e){
+            e.printStackTrace();
+            return "";
+        }
+    }
+
+    //获取用户ID
+    public String doLogin2(Fixer fixer) {
+        try{
+
+            //user.setUserPassword(MD5Util.md5(user.getUserPassword()));
+            Fixer exist = am.selectFixerByUserNameAndPassword(fixer);
+
+            if(exist == null){
+                //登录失败
+                System.out.println("登录失败");
+                return "-1";
+            }else {
+
+                //登录成功,存储user_name
+                String ticket = String.valueOf(exist.getFixerId());
+                return ticket;
+            }
+        }catch (Exception e){
+            e.printStackTrace();
+            return "";
+        }
+    }
+
     //查看用户信息
     public EasyUIResult queryPageUser(Integer page, Integer rows) {
         EasyUIResult result = new EasyUIResult();
@@ -204,6 +248,26 @@ public class AdminService {
     //发放完物资之后把剩余物资数更新
     public void fafang(Goods goods) {
         am.fafang(goods);
+    }
+
+
+    //维修人员注册---查看用户名是否存在
+    public boolean userNameExists(String userName) {
+        System.out.println("Service userNameExists");
+        int exist = am.selectUserCountByUserName(userName);
+        System.out.println(exist);
+        return exist == 1;
+    }
+
+
+    public void addFixer(Fixer fixer) {
+
+        //密码加密
+        //String md5Pass = MD5Util.md5(user.getUserPassword());
+        //user.setUserPassword(md5Pass);
+        //  user.setUserStatus("1");
+        am.insertFixer(fixer);
+
     }
 }
 

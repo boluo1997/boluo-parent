@@ -2,6 +2,7 @@ package cn.tedu.admin.controller;
 
 import cn.tedu.admin.service.AdminService;
 import com.jt.common.pojo.*;
+import com.jt.common.utils.CookieUtils;
 import com.jt.common.vo.EasyUIResult;
 import com.jt.common.vo.SysResult;
 import org.apache.commons.lang.StringUtils;
@@ -9,6 +10,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 @RestController
 @RequestMapping("admin")
@@ -25,6 +29,56 @@ public class AdminController {
 
         if(StringUtils.isNotEmpty(ticket)){
             //登录成功
+            return SysResult.ok();
+        }else {
+            //登录失败
+            return SysResult.build(201,"登录失败",null);
+        }
+    }
+
+
+    //查看用户名是否存在
+    @RequestMapping("checkUserName")        //localhost:10001/user/checkUserName?userName=aaa
+    public SysResult checkUserName(String userName){
+        if(as.userNameExists(userName)){
+            //存在
+            return SysResult.build(201,"用户名已存在",null);
+        }else {
+            return SysResult.ok();
+        }
+    }
+
+    //维修人员注册
+    @RequestMapping("fixer/regiest")
+    public SysResult addUser(Fixer fixer){
+
+        //判断新增成功失败
+        try{
+            System.out.println("4/20..进来了");
+            as.addFixer(fixer);
+            return SysResult.ok();
+        }catch(Exception e){
+            e.printStackTrace();
+            return SysResult.build(201,"新增失败",null);
+
+        }
+    }
+
+    //维修人员登录
+    @RequestMapping("fixer/login")        //
+    public SysResult doLogin(Fixer fixer, HttpServletRequest req, HttpServletResponse res){
+
+        System.out.println("进来了!");
+        System.out.println(fixer);
+
+        String ticket = as.doLogin1(fixer);
+        String userId = as.doLogin2(fixer);
+
+        if(StringUtils.isNotEmpty(ticket)){
+            //登录成功,把ticket(userName)加入到cookie中返回给浏览器
+            CookieUtils.setCookie(req,res,"FIXER_NAME",ticket);
+            CookieUtils.setCookie(req,res,"FIXER_ID",userId);
+            //System.out.println(CookieUtils.getCookieValue(req,"USER_NAME"));
             return SysResult.ok();
         }else {
             //登录失败

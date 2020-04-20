@@ -110,6 +110,7 @@ public class UserController {
         }
     }
 
+
     //查看自己物资申请状态        1代表还没批准    2代表已经批准
     @RequestMapping("chashenqing")
     public String chashenqing(Integer userId){
@@ -181,6 +182,19 @@ public class UserController {
     public EasyUIResult jiansuo(Integer page, Integer rows,String text){
         System.out.println("进来了!");
         return us.jiansuo(page,rows,text);
+    }
+
+
+    //宿舍报修申请表
+    @RequestMapping("")
+    public SysResult shenqingFix(Fix fix){
+        try{
+            us.shenqingFix(fix);
+            return SysResult.ok();
+        }catch(Exception e){
+            e.printStackTrace();
+            return SysResult.build(201,"申请失败!",null);
+        }
     }
 
 

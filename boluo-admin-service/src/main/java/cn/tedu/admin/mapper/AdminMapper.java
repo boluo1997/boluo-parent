@@ -91,6 +91,16 @@ public interface AdminMapper {
 
     //发放完物资之后把剩余物资数更新
     void fafang(Goods goods);
+
+    //查看用户名是否存在
+    int selectUserCountByUserName(String userName);
+
+    //注册
+    void insertFixer(Fixer fixer);
+
+    //维修人员登录之前查看存在不存在该账号
+    Fixer selectFixerByUserNameAndPassword(Fixer fixer);
+
 }
 
 

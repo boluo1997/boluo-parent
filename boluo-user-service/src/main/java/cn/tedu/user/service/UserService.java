@@ -105,19 +105,18 @@ public class UserService {
         um.deleteUserById(userId);
     }
 
-    //申请领养动物
     public void adoptAnimal(Integer userId, Integer animalId,String userName) {
         this.existUserId(userId,animalId);
         um.insertTemp(userId,animalId,userName);
     }
 
-    //查看该动物有没有被其他人申请领养
+
     public Temp existAnimalIdInTemp(Integer animalId) {
         Temp exist = um.selectStatusByAnimalId(animalId);
         return exist;
     }
 
-    //查看该用户有没有领养其他动物
+
     public Temp existUserIdInTemp(Integer userId) {
         Temp exist = um.selectStatusByUserId(userId);
         return exist;
@@ -254,6 +253,11 @@ public class UserService {
         List<Wenzhang> pList = um.jiansuo(start,rows,text);
         result.setRows(pList);
         return result;
+    }
+
+    //宿舍报修申请表
+    public void shenqingFix(Fix fix) {
+        
     }
 }
 

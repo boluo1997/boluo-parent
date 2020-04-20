@@ -213,6 +213,43 @@
         where goods_id = 1;
     </update>
 
+
+    <!--查看维修人员用户名是否存在-->
+    <select id="selectUserCountByUserName" parameterType="String" resultType="Integer">
+        select count(fixer_id)
+        from fixer
+        where user_name = #{userName};
+    </select>
+
+    <!--维修人员注册-->
+    <insert id="insertFixer" parameterType="User">
+        insert into fixer (
+            user_name,
+            password,
+            name,
+            shenfen_num,
+            phone,
+            status
+        )values(
+            #{userName},
+            #{password},
+            #{name},
+            #{shenfenNum},
+            #{phone},
+            #{status}
+
+        );
+    </insert>
+
+
+    <!-- 管理员登录 -->
+    <select id="selectFixerByUserNameAndPassword" parameterType="Fixer" resultType="Fixer">
+        select *
+        from fixer
+        where user_name=#{userName} and password=#{password};
+    </select>
+
+
 </mapper>
 
 
