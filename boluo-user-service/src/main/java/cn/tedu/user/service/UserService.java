@@ -1,10 +1,7 @@
 package cn.tedu.user.service;
 
 import cn.tedu.user.mapper.UserMapper;
-import com.jt.common.pojo.Animal;
-import com.jt.common.pojo.Temp;
-import com.jt.common.pojo.User;
-import com.jt.common.pojo.Volunteer;
+import com.jt.common.pojo.*;
 import com.jt.common.utils.MD5Util;
 import com.jt.common.vo.EasyUIResult;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -32,8 +29,8 @@ public class UserService {
 
         //密码加密
         String md5Pass = MD5Util.md5(user.getUserPassword());
-        user.setUserPassword(md5Pass);
-        user.setUserType("1");
+        //user.setUserPassword(md5Pass);
+        //  user.setUserStatus("1");
         um.insertUser(user);
 
     }
@@ -41,7 +38,7 @@ public class UserService {
     //登录 获取用户名
     public String doLogin(User user) {
         try{
-            user.setUserPassword(MD5Util.md5(user.getUserPassword()));
+            //user.setUserPassword(MD5Util.md5(user.getUserPassword()));
             User exist = um.selectUserByUserNameAndPassword(user);
 
             if(exist == null){
@@ -156,6 +153,107 @@ public class UserService {
     //查看自己的志愿者状态
     public Volunteer checkVolunteer(Integer userId) {
         return um.checkVolunteer(userId);
+    }
+
+    //申请防疫物资
+    public void shenqing(Shenqing shenqing) {
+        um.shenqing(shenqing);
+    }
+
+    //修改个人信息
+    public void xiugai(User user){
+        um.xiugai(user);
+    }
+
+
+    //查看文章---分页
+    public EasyUIResult wenzhang(Integer page, Integer rows) {
+        //准备一个返回对象
+        EasyUIResult result = new EasyUIResult();
+        //封装total
+        Integer total = um.selectWenzhangCount();
+        result.setTotal(total);
+
+        //封装返回分页数据rows List<Animal>
+        Integer start = (page-1)*rows;
+        List<Wenzhang> pList = um.selectWenzhangByPage(start,rows);
+        result.setRows(pList);
+        return result;
+    }
+
+    //查看单个文章
+    public Wenzhang queryOneWenzhang(Integer wenzhangId) {
+        return um.selectWenzhangById(wenzhangId);
+    }
+
+    //查看自己物资申请的状态
+    public String chashenqing(Integer userId) {
+        return um.chashenqing(userId);
+    }
+
+    //留言
+    public void liuyan(Message message) {
+        um.liuyan(message);
+    }
+
+    //查看留言
+    public EasyUIResult chakanliuyan(Integer page, Integer rows, Integer wenzhangId) {
+        //准备一个返回对象
+        EasyUIResult result = new EasyUIResult();
+        //封装total
+        Integer total = um.selectmessageCount();
+        result.setTotal(total);
+
+        //封装返回分页数据rows List<Animal>
+        Integer start = (page-1)*rows;
+        List<Message> pList = um.selectMessageByPage(start,rows,wenzhangId);
+        result.setRows(pList);
+        return result;
+    }
+
+    //查看所有评论
+    public EasyUIResult allpinglun(Integer page, Integer rows) {
+        //准备一个返回对象
+        EasyUIResult result = new EasyUIResult();
+        //封装total
+        Integer total = um.selectallmessage();
+        result.setTotal(total);
+
+        //封装返回分页数据rows List<Animal>
+        Integer start = (page-1)*rows;
+        List<Message> pList = um.selectallMessage(start,rows);
+        result.setRows(pList);
+        return result;
+    }
+
+    //查看患者人数
+    public EasyUIResult huanzhe(Integer page, Integer rows) {
+        //准备一个返回对象
+        EasyUIResult result = new EasyUIResult();
+        //封装total
+        Integer total = um.selectAllHuanzhe();
+        result.setTotal(total);
+
+        //封装返回分页数据rows List<Animal>
+        Integer start = (page-1)*rows;
+        List<Huanzhe> pList = um.selectHuanzheByPage(start,rows);
+        result.setRows(pList);
+        return result;
+    }
+
+    //全文检索
+    public EasyUIResult jiansuo(Integer page, Integer rows,String text) {
+        //准备一个返回对象
+        EasyUIResult result = new EasyUIResult();
+        //封装total
+        Integer total = um.jiansuoCount();
+        result.setTotal(total);
+
+        //封装返回分页数据rows List<Animal>
+        Integer start = (page-1)*rows;
+        List<Wenzhang> pList = um.jiansuo(start,rows,text);
+        result.setRows(pList);
+        return result;
     }
 }
 

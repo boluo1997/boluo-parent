@@ -99,4 +99,133 @@
         limit #{start},#{rows};
     </select>
 
+    <!--查看申请表数量-->
+    <select id="selectShenqingCount" resultType="Integer">
+        select count(shenqing_id) from shenqing;
+    </select>
+
+    <!--申请表分页查询-->
+    <select id="selectShenqingByPage" resultType="Shenqing">
+        select *
+        from shenqing
+        limit #{start},#{rows};
+    </select>
+
+    <!--批准物资-->
+    <update id="pizhun" parameterType="Integer">
+        update user
+        set user_status = 3
+        where user_id = #{userId};
+    </update>
+
+    <!--发放完物资之后把剩余物资数更新-->
+    <update id="fafang" parameterType="Goods">
+        update goods
+        set goods_kouzhao = #{goodsKouzhao},goods_tiwen = #{goodsTiwen},goods_xiaodu = #{goodsXiaodu}
+        where goods_id = 1;
+    </update>
+
+    <!--根据用户ID把申请物资的类型找出来-->
+    <select id="shenqingTy" parameterType="Integer" resultType="Integer">
+        select shenqing_type
+        from shenqing
+        where user_id = #{userId};
+    </select>
+
+    <!--获取当前申请表的对象-->
+    <select id="goods" resultType="Goods">
+        select *
+        from goods;
+    </select>
+
+    <!--从申请表中把该条信息删除-->
+    <delete id="shanshenqing" parameterType="Integer">
+        delete from shenqing
+        where user_id = #{userId};
+    </delete>
+
+    <!--添加文章-->
+    <insert id="wenzhang" parameterType="Wenzhang">
+        insert into wenzhang(
+            wenzhang_title,
+            wenzhang_info,
+            wenzhang_img,
+            user_name,
+            c_time
+        )values(
+            #{wenzhangTitle},
+            #{wenzhangInfo},
+            #{wenzhangImg},
+            #{userName},
+            #{cTime}
+        );
+    </insert>
+
+    <!--删除文章-->
+    <delete id="shanwen" parameterType="Integer">
+        delete from wenzhang
+        where wenzhang_id = #{wenzhangId};
+    </delete>
+
+    <!--删除评论-->
+    <delete id="shanping" parameterType="Integer">
+        delete from message
+        where message_id = #{messageId};
+    </delete>
+
+    <!--修改患者人数-->
+    <update id="xiugaihuanzhe" parameterType="Huanzhe">
+        update huanzhe
+        set xianyou = #{xianyou},leiji = #{leiji},bijiao = #{bijiao},live = #{live},death = #{death}
+        where diqu = #{diqu};
+    </update>
+
+    <!--查询查询结果数量-->
+    <select id="selectGoodsCount" resultType="Integer">
+        select count(goods_id) from goods;
+    </select>
+
+    <!--分页查看剩余物资数量-->
+    <select id="selectGoodsByPage" resultType="Goods">
+        select *
+        from goods
+        limit #{start},#{rows};
+    </select>
+
+    <!--修改口罩数量-->
+    <update id="kouzhao" parameterType="Integer">
+        update goods
+        set goods_kouzhao = #{goodsKouzhao}
+        where goods_id = 1;
+    </update>
+
+    <!--修改消毒水数量-->
+    <update id="xiaodu" parameterType="Integer">
+        update goods
+        set goods_xiaodu = #{goodsXiaodu}
+        where goods_id = 1;
+    </update>
+
+    <!--修改体温计数量-->
+    <update id="tiwen" parameterType="Integer">
+        update goods
+        set goods_tiwen = #{goodsTiwen}
+        where goods_id = 1;
+    </update>
+
 </mapper>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

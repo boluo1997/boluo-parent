@@ -9,12 +9,13 @@
         <module name="boluo-eureka-server01" />
         <module name="boluo-givelose-service" />
         <module name="boluo-admin-service" />
-        <module name="boluo-search-service" />
-        <module name="boluo-user-service" />
         <module name="boluo-zuul-service02" />
+        <module name="boluo-img-service" />
+        <module name="boluo-user-service" />
+        <module name="boluo-search-service" />
         <module name="boluo-common-resources" />
         <module name="boluo-animal-service" />
-        <module name="boluo-img-service" />
+        <module name="boluo_search_service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

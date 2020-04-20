@@ -1,10 +1,7 @@
 package cn.tedu.admin.service;
 
 import cn.tedu.admin.mapper.AdminMapper;
-import com.jt.common.pojo.Admin;
-import com.jt.common.pojo.Adopt;
-import com.jt.common.pojo.User;
-import com.jt.common.pojo.Volunteer;
+import com.jt.common.pojo.*;
 import com.jt.common.vo.EasyUIResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -117,6 +114,97 @@ public class AdminService {
         return result;
     }
 
+    //查看申请物资状态
+    public EasyUIResult chakanshenqing(Integer page, Integer rows) {
+        //准备一个返回对象
+        EasyUIResult result = new EasyUIResult();
+        //封装total
+        Integer total = am.selectShenqingCount();
+        result.setTotal(total);
+
+        //封装返回分页数据rows List<Volunteer>
+        Integer start = (page-1)*rows;
+        List<Volunteer> pList = am.selectShenqingByPage(start,rows);
+        result.setRows(pList);
+        return result;
+    }
+
+    //根据用户ID把申请的物资类型找出来
+    public int shenqingTy(Integer userId) {
+        return am.shenqingTy(userId);
+    }
+
+    //把当前申请表的对象获取到
+    public Goods goods() {
+        return am.goods();
+    }
+
+    //批准物资
+    public void pizhun(Integer userId) {
+        am.pizhun(userId);
+    }
+
+    //添加文章
+    public void wenzhang(Wenzhang wenzhang) {
+        am.wenzhang(wenzhang);
+    }
+
+    //删除文章
+    public void shanwen(Integer wenzhangId) {
+        am.shanwen(wenzhangId);
+    }
+
+
+    //从申请表中把该条信息删除
+    public void shanshenqing(Integer userId) {
+        am.shanshenqing(userId);
+    }
+
+    //删除评论
+    public void shanping(Integer messageId) {
+        am.shanping(messageId);
+    }
+
+    //修改患者人数
+    public void xiugaihuanzhe(Huanzhe huanzhe) {
+        am.xiugaihuanzhe(huanzhe);
+    }
+
+    //查看物资剩余数量
+    public EasyUIResult goods(Integer page, Integer rows) {
+        //准备一个返回对象
+        EasyUIResult result = new EasyUIResult();
+        //封装total
+        Integer total = am.selectGoodsCount();
+        result.setTotal(total);
+
+        //封装返回分页数据rows List<Volunteer>
+        Integer start = (page-1)*rows;
+        List<Goods> pList = am.selectGoodsByPage(start,rows);
+        result.setRows(pList);
+        return result;
+    }
+
+    //修改口罩数量
+    public void kouzhao(Integer kouzhao) {
+        am.kouzhao(kouzhao);
+    }
+
+
+    //修改消毒水数量
+    public void xiaodu(Integer xiaodu) {
+        am.xiaodu(xiaodu);
+    }
+
+    //修改体温计数量
+    public void tiwen(Integer tiwen) {
+        am.tiwen(tiwen);
+    }
+
+    //发放完物资之后把剩余物资数更新
+    public void fafang(Goods goods) {
+        am.fafang(goods);
+    }
 }
 
 

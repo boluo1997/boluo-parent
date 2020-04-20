@@ -1,9 +1,6 @@
 package cn.tedu.admin.mapper;
 
-import com.jt.common.pojo.Admin;
-import com.jt.common.pojo.Adopt;
-import com.jt.common.pojo.User;
-import com.jt.common.pojo.Volunteer;
+import com.jt.common.pojo.*;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
@@ -13,41 +10,87 @@ public interface AdminMapper {
     //admin login function
     Admin selectAdminByAdminNameAndPassword(Admin admin);
 
-    //查询用户信息数量
+
     Integer selectUserCount();
 
-    //查看用户信息
+
     List<User> selectUserByPage(@Param("start") Integer start,@Param("rows") Integer rows);
 
-    //删除用户信息
+
     void deleteUserByUserId(Integer userId);
 
     Integer selectTempCount();
 
-    //查看所有想领养动物的人员名单
+    //
     List<User> selectTempByPage(@Param("start") Integer start,@Param("rows") Integer rows);
 
-    //批准领养      把伪领养表中的内容写到领养表中  并加入批准通过的表中
+
     void insertAdopt(Adopt adopt);
 
-    //批准领养之后,改变temp表的状态码
+
     void updateTemp(Integer userId);
 
     Integer selectVolunteerCount();
 
-    //查看想成为志愿者的人的名单     分页查询
+
     List<Volunteer> selectVolunteerByPage(@Param("start") Integer start,@Param("rows") Integer rows);
 
-    //批准成为志愿者
+
     void updateVolunteer(Integer userId);
 
-    //查看志愿者名单
+
     Integer selectAlreadyVolunteerCount();
 
-    //查看志愿者名单
+
     List<Volunteer> selectAlreadyVolunteerByPage(@Param("start") Integer start,@Param("rows") Integer rows);
 
 
+    //查看申请表数量
+    Integer selectShenqingCount();
+
+    //查看申请表
+    List<Volunteer> selectShenqingByPage(@Param("start") Integer start,@Param("rows") Integer rows);
+
+    //把当前申请表的对象获取
+    Goods goods();
+
+    //批准物资
+    void pizhun(Integer userId);
+
+    //添加文章
+    void wenzhang(Wenzhang wenzhang);
+
+    //删除文章
+    void shanwen(Integer wenzhangId);
+
+    //从申请表中把该条信息删除
+    void shanshenqing(Integer userId);
+
+    //删除评论
+    void shanping(Integer messageId);
+
+    //修改患者人数
+    void xiugaihuanzhe(Huanzhe huanzhe);
+
+    //查询物资总数量
+    Integer selectGoodsCount();
+
+    //查看物资剩余数量
+    List<Goods> selectGoodsByPage(@Param("start") Integer start,@Param("rows") Integer rows);
+
+    //修改口罩数量
+    void kouzhao(Integer kouzhao);
+
+    //修改消毒水数量
+    void xiaodu(Integer xiaodu);
+
+    //修改体温计数量
+    void tiwen(Integer tiwen);
+
+    int shenqingTy(Integer userId);
+
+    //发放完物资之后把剩余物资数更新
+    void fafang(Goods goods);
 }
 
 

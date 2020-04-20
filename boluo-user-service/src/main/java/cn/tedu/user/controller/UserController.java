@@ -1,9 +1,7 @@
 package cn.tedu.user.controller;
 
 import cn.tedu.user.service.UserService;
-import com.jt.common.pojo.Animal;
-import com.jt.common.pojo.User;
-import com.jt.common.pojo.Volunteer;
+import com.jt.common.pojo.*;
 import com.jt.common.utils.CookieUtils;
 import com.jt.common.vo.EasyUIResult;
 import com.jt.common.vo.SysResult;
@@ -54,6 +52,9 @@ public class UserController {
     @RequestMapping("login")        //
     public SysResult doLogin(User user, HttpServletRequest req, HttpServletResponse res){
 
+        System.out.println("进来了!");
+        System.out.println(user);
+
         String ticket = us.doLogin(user);
         String userId = us.doLogin2(user);
 
@@ -97,75 +98,92 @@ public class UserController {
     }
 
 
-    //申请领养动物        //往temp表中添加数据  userId和animalId
-    @RequestMapping("adopt")
-    public SysResult adoptAnimal(Integer userId,Integer animalId,String userName){
-
-        if(us.existAnimalIdInTemp(animalId)!=null){   //如果temp表中已经有该动物ID,说明该动物已经被人领养,别的用户不能再领养
-            //System.out.println("203");
-            return SysResult.build(203,"该动物已经被领养",null);
-        }else if(us.existUserIdInTemp(userId)!=null){     //如果temp表中已经有该用户ID,就不允许该用户再领养其他的动物
-            //System.out.println("204");
-            return SysResult.build(204,"每人只能领养一个动物",null);
-        }else if(us.existUserId(userId,animalId)==null){  //temp表中不存在userId和animalId,说明该动物处于无人领养状态
-            try{
-                us.adoptAnimal(userId,animalId,userName);
-                //System.out.println("200");
-                return SysResult.ok();
-            }catch (Exception e){
-                e.printStackTrace();
-                //System.out.println("201");
-                return SysResult.build(201,"失败!",null);
-            }
-        }else {     //如果temp表中存在userId和animalId,就说明一个用户点了两次,显示不能重复申请
-            //System.out.println("202");
-            return SysResult.build(202,"不能重复申请",null);
-        }
-    }
-
-
-    //查看自己正在申请领养的动物
-    @RequestMapping("check/temp")
-    public Animal querTemp(Integer userId){
-        return us.queryTemp(userId);
-    }
-
-    //查看自己被批准的可以领养的动物
-    @RequestMapping("check/adopt")
-    public Animal queryAdopt(Integer userId){
-        return us.queryAdopt(userId);
-    }
-
-
-    //申请成为志愿者       改变userType从1到2
-    @RequestMapping("applyVolunteer")
-    public SysResult applyVolunteer(Integer userId){
+    //申请防疫物资,申请成功之后把userStatus状态从1改为2,代表已经申请
+    @RequestMapping("shenqing")
+    public SysResult shenqing(Shenqing shenqing){
         try{
-            us.applyVolunteer(userId);
+            us.shenqing(shenqing);
             return SysResult.ok();
-        }catch (Exception e){
+        }catch(Exception e){
             e.printStackTrace();
             return SysResult.build(201,"申请失败!",null);
         }
     }
 
-    //申请成为志愿者       往volunteer表中插入数据
-    @RequestMapping("insertVolunteer")
-    public SysResult insertVolunteer(Volunteer volunteer){
+    //查看自己物资申请状态        1代表还没批准    2代表已经批准
+    @RequestMapping("chashenqing")
+    public String chashenqing(Integer userId){
+        return us.chashenqing(userId);
+    }
+
+    //修改个人信息
+    @RequestMapping("xiugai")
+    public SysResult xiugai(User user){
         try{
-            us.insertVolunteer(volunteer);
+            System.out.println("修改进来了!");
+            System.out.println(user);
+            us.xiugai(user);
             return SysResult.ok();
         }catch (Exception e){
             e.printStackTrace();
-            return SysResult.build(201,"申请成为志愿者失败!",null);
+            return SysResult.build(201,"修改失败!",null);
         }
     }
 
-    //查看自己的志愿者状态
-    @RequestMapping("check/volunteer")
-    public Volunteer checkVolunteer(Integer userId) {
-        return us.checkVolunteer(userId);
+    //查看文章---分页
+    @RequestMapping("wenzhang")
+    public EasyUIResult wenzhang(Integer page, Integer rows){
+        System.out.println("进来了!");
+        return us.wenzhang(page,rows);
     }
+
+    //查看单个文章
+    @RequestMapping("wenzhang1/{wenzhangId}")     //路径传参     //localhost:10001/user/item/5
+    public Wenzhang queryOneWenzhang(@PathVariable Integer wenzhangId){
+        return us.queryOneWenzhang(wenzhangId);
+    }
+
+    //留言
+    @RequestMapping("liuyan")
+    public SysResult liuyan(Message message){
+        try{
+            us.liuyan(message);
+            return SysResult.ok();
+        }catch (Exception e){
+            e.printStackTrace();
+            return SysResult.build(201,"留言失败!",null);
+        }
+
+    }
+
+    //查看留言(根据文章)(用户)
+    @RequestMapping("chakanliuyan")
+    public EasyUIResult chakanliuyan(Integer page, Integer rows,Integer wenzhangId){
+        System.out.println("进来了!");
+        return us.chakanliuyan(page,rows,wenzhangId);
+    }
+
+    //查看所有评论(管理员)
+    @RequestMapping("allpinglun")
+    public EasyUIResult allpinglun(Integer page, Integer rows){
+        System.out.println("进来了!");
+        return us.allpinglun(page,rows);
+    }
+
+    //查看患者人数
+    @RequestMapping("huanzhe")
+    public EasyUIResult huanzhe(Integer page, Integer rows){
+        return us.huanzhe(page,rows);
+    }
+
+    //全文检索
+    @RequestMapping("jiansuo")
+    public EasyUIResult jiansuo(Integer page, Integer rows,String text){
+        System.out.println("进来了!");
+        return us.jiansuo(page,rows,text);
+    }
+
+
 }
 
 

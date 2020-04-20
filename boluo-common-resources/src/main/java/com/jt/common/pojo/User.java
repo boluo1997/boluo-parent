@@ -5,8 +5,9 @@ public class User {
     private String userName;        //用户名
     private String userPassword;    //密码
     private String userPhone;       //手机号
-    private String userGender;      //性别
-    private String userType;        //申请成为志愿者的状态
+    private String userEmail;      //邮箱
+    private String userStatus;        //状态码(申请物资)
+    private int userType;           //状态码(志愿者)
 
     public int getUserId() {
         return userId;
@@ -40,31 +41,40 @@ public class User {
         this.userPhone = userPhone;
     }
 
-    public String getUserGender() {
-        return userGender;
+    public String getUserEmail() {
+        return userEmail;
     }
 
-    public void setUserGender(String userGender) {
-        this.userGender = userGender;
+    public void setUserEmail(String userEmail) {
+        this.userEmail = userEmail;
     }
 
-    public String getUserType() {
+    public String getUserStatus() {
+        return userStatus;
+    }
+
+    public void setUserStatus(String userStatus) {
+        this.userStatus = userStatus;
+    }
+
+    public int getUserType() {
         return userType;
     }
 
-    public void setUserType(String userType) {
+    public void setUserType(int userType) {
         this.userType = userType;
     }
 
     @Override
     public String toString() {
         return "User{" +
-                "userId='" + userId + '\'' +
+                "userId=" + userId +
                 ", userName='" + userName + '\'' +
                 ", userPassword='" + userPassword + '\'' +
                 ", userPhone='" + userPhone + '\'' +
-                ", userGender='" + userGender + '\'' +
-                ", userType='" + userType + '\'' +
+                ", userEmail='" + userEmail + '\'' +
+                ", userStatus='" + userStatus + '\'' +
+                ", userType=" + userType +
                 '}';
     }
 }

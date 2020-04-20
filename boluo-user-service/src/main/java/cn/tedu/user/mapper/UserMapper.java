@@ -52,4 +52,49 @@ public interface UserMapper {
 
     //查看自己的志愿者状态
     Volunteer checkVolunteer(Integer userId);
+
+    //申请防疫物资
+    void shenqing(Shenqing shenqing);
+
+    //修改个人信息
+    void xiugai(User user);
+
+    //查看文章数量
+    Integer selectWenzhangCount();
+
+    //分页查看文章
+    List<Wenzhang> selectWenzhangByPage(@Param("start") Integer start,@Param("rows") Integer rows);
+
+    //查看单个文章
+    Wenzhang selectWenzhangById(Integer wenzhangId);
+
+    //查看自己物资申请的状态
+    String chashenqing(Integer userId);
+
+    //留言
+    void liuyan(Message message);
+
+    //查询评论数
+    Integer selectmessageCount();
+
+    //批量查看评论
+    List<Message> selectMessageByPage(@Param("start") Integer start,@Param("rows") Integer rows,@Param("wenzhangId") Integer wenzhangId);
+
+    //查询所有评论数
+    Integer selectallmessage();
+
+    //查看所有评论
+    List<Message> selectallMessage(@Param("start") Integer start,@Param("rows") Integer rows);
+
+    //查询所有患者数量
+    Integer selectAllHuanzhe();
+
+    //查看所有患者数据
+    List<Huanzhe> selectHuanzheByPage(@Param("start") Integer start,@Param("rows") Integer rows);
+
+    //全文检索
+    List<Wenzhang> jiansuo(@Param("start") Integer start, @Param("rows") Integer rows,@Param("text") String text);
+
+    //全文检索出的数量
+    Integer jiansuoCount();
 }

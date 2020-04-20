@@ -15,15 +15,13 @@
             user_name,
             user_password,
             user_phone,
-            user_gender,
-            user_type
+            user_email
         )values(
             #{userName},
             #{userPassword},
             #{userPhone},
-            #{userGender},
-            #{userType}
-        )
+            #{userEmail}
+        );
     </insert>
 
     <select id="selectUserByUserNameAndPassword"
@@ -146,6 +144,127 @@
         from volunteer
         where user_id = #{userId};
     </select>
+
+    <!--申请防疫物资-->
+    <insert id="shenqing" parameterType="Shenqing">
+        insert into shenqing(
+            user_id,
+            user_name,
+            user_phone,
+            user_info,
+            shenqing_address,
+            shenqing_type
+        )values(
+            #{userId},
+            #{userName},
+            #{userPhone},
+            #{userInfo},
+            #{shenqingAddress},
+            #{shenqingType}
+        )
+    </insert>
+
+    <!--查看自己物资正在申请的状态-->
+    <select id="chashenqing" parameterType="Integer" resultType="String">
+        select user_status
+        from user
+        where user_id = #{userId};
+    </select>
+
+    <!--修改个人信息-->
+    <update id="xiugai" parameterType="User">
+        update user set
+        user_name = #{userName},
+        user_password = #{userPassword},
+        user_phone = #{userPhone},
+        user_email = #{userEmail}
+        where user_id = #{userId};
+    </update>
+
+    <!--查询文章数量-->
+    <select id = "selectWenzhangCount" resultType="Integer">
+        select count(wenzhang_id) from wenzhang;
+    </select>
+
+    <!--文章分页查看-->
+    <select id="selectWenzhangByPage" resultType="Wenzhang">
+        select *
+        from wenzhang
+        limit #{start},#{rows};
+    </select>
+
+    <!--查看单个文章-->
+    <select id="selectWenzhangById" resultType="Wenzhang">
+        select *
+        from wenzhang
+        where wenzhang_id = #{wenzhangId};
+    </select>
+
+    <!--留言-->
+    <insert id="liuyan" parameterType="Message">
+        insert into message(
+            wenzhang_id,
+            user_name,
+            leave_message
+        )values(
+            #{wenzhangId},
+            #{userName},
+            #{leaveMessage}
+        )
+    </insert>
+
+    <!--查询评论数-->
+    <select id = "selectmessageCount" resultType="Integer">
+        select count(message_id) from message;
+    </select>
+
+    <!--批量查看评论-->
+    <select id="selectMessageByPage" parameterType="Message" resultType="Message">
+        select *
+        from message
+        where wenzhang_id = #{wenzhangId}
+        limit #{start},#{rows};
+    </select>
+
+    <!--查询所有评论数-->
+    <select id = "selectallmessage" resultType="Integer">
+        select count(message_id) from message;
+    </select>
+
+    <!--查看所有评论-->
+    <select id="selectallMessage" resultType="Message">
+        select *
+        from message
+        limit #{start},#{rows};
+    </select>
+
+    <!--查询所有患者数量-->
+    <select id = "selectAllHuanzhe" resultType="Integer">
+        select count(huanzhe_id) from huanzhe;
+    </select>
+
+    <!--查看所有患者数据-->
+    <select id="selectHuanzheByPage" resultType="Huanzhe">
+        select *
+        from huanzhe
+        limit #{start},#{rows};
+    </select>
+
+    <!--全文检索出来的数量-->
+    <select id="jiansuoCount" parameterType="String" resultType="Wenzhang">
+        select count(wenzhang_id)
+        from wenzhang
+
+    </select>
+
+    <!--全文检索-->
+    <select id="jiansuo" resultType="Wenzhang">
+        SELECT *
+        FROM wenzhang
+        WHERE wenzhang_title LIKE concat('%',#{text},'%')
+        limit #{start},#{rows};
+    </select>
+
 
 </mapper>
 
