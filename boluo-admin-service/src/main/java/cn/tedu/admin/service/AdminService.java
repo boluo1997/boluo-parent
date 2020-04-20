@@ -269,6 +269,21 @@ public class AdminService {
         am.insertFixer(fixer);
 
     }
+
+    //查看shenqingFix表中的申请列表
+    public EasyUIResult checkFix(Integer page, Integer rows) {
+        //准备一个返回对象
+        EasyUIResult result = new EasyUIResult();
+        //封装total
+        Integer total = am.selectFixCount();
+        result.setTotal(total);
+
+        //封装返回分页数据rows List<Volunteer>
+        Integer start = (page-1)*rows;
+        List<Goods> pList = am.selectGoodsByPage(start,rows);
+        result.setRows(pList);
+        return result;
+    }
 }
 
 

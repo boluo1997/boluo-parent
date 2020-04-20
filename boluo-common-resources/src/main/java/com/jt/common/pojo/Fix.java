@@ -11,7 +11,8 @@ public class Fix {
     private String date;
     private String object;
     private String info;
-    private String status;
+    private String Image;
+    private int status;
 
     public int getFixId() {
         return fixId;
@@ -85,11 +86,19 @@ public class Fix {
         this.info = info;
     }
 
-    public String getStatus() {
+    public String getImage() {
+        return Image;
+    }
+
+    public void setImage(String image) {
+        Image = image;
+    }
+
+    public int getStatus() {
         return status;
     }
 
-    public void setStatus(String status) {
+    public void setStatus(int status) {
         this.status = status;
     }
 

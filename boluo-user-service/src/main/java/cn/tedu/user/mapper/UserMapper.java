@@ -97,4 +97,7 @@ public interface UserMapper {
 
     //全文检索出的数量
     Integer jiansuoCount();
+
+    //宿舍报修申请表
+    void shenqingFix(Fix fix);
 }

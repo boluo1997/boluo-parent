@@ -266,6 +266,35 @@
     </select>
 
 
+    <!--宿舍报修申请表-->
+    <insert id="shenqingFix" parameterType="Fix">
+        insert into fix(
+            fixId,
+            user_name,
+            gender,
+            grade,
+            num,
+            phone,
+            date,
+            object,
+            info,
+            image,
+            status
+        )values(
+            #{fixId},
+            #{userName},
+            #{gender},
+            #{grade},
+            #{num},
+            #{phone},
+            #{date},
+            #{object},
+            #{info},
+            #{Image},
+            #{status}
+        );
+    </insert>
+
 </mapper>
 
 

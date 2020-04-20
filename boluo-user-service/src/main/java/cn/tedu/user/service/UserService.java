@@ -257,7 +257,7 @@ public class UserService {
 
     //宿舍报修申请表
     public void shenqingFix(Fix fix) {
-        
+        um.shenqingFix(fix);
     }
 }
 

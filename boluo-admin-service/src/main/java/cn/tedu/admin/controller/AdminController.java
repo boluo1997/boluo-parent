@@ -246,4 +246,12 @@ public class AdminController {
         }
     }
 
+
+    //查看shenqingFix表中的申请列表
+    @RequestMapping("checkFix")
+    public EasyUIResult checkFix(Integer page, Integer rows){
+        return as.checkFix(page,rows);
+    }
+
+
 }

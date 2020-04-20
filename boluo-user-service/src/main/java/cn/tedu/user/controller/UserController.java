@@ -186,7 +186,7 @@ public class UserController {
 
 
     //宿舍报修申请表
-    @RequestMapping("")
+    @RequestMapping("shenqingFix")
     public SysResult shenqingFix(Fix fix){
         try{
             us.shenqingFix(fix);
