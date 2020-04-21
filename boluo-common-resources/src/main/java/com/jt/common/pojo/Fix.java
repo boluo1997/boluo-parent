@@ -13,6 +13,7 @@ public class Fix {
     private String info;
     private String Image;
     private int status;
+    private int userId;
 
     public int getFixId() {
         return fixId;
@@ -102,6 +103,14 @@ public class Fix {
         this.status = status;
     }
 
+    public int getUserId() {
+        return userId;
+    }
+
+    public void setUserId(int userId) {
+        this.userId = userId;
+    }
+
     @Override
     public String toString() {
         return "Fix{" +
@@ -114,8 +123,9 @@ public class Fix {
                 ", date='" + date + '\'' +
                 ", object='" + object + '\'' +
                 ", info='" + info + '\'' +
-                ", status='" + status + '\'' +
+                ", Image='" + Image + '\'' +
+                ", status=" + status +
+                ", userId=" + userId +
                 '}';
     }
-
 }

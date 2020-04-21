@@ -250,6 +250,19 @@
     </select>
 
 
+    <!--查询Fix表中搜索出的数据量-->
+    <select id="selectFixCount" resultType="Integer">
+        select count(fixId)
+        from fix;
+    </select>
+
+    <!--分页查看Fix表中数据-->
+    <select id="selectFixByPage" parameterType="Fix" resultType="Fix">
+        select *
+        from fix
+        limit #{start},#{rows};
+    </select>
+
 </mapper>
 
 

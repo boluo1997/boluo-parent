@@ -280,7 +280,7 @@ public class AdminService {
 
         //封装返回分页数据rows List<Volunteer>
         Integer start = (page-1)*rows;
-        List<Goods> pList = am.selectGoodsByPage(start,rows);
+        List<Fix> pList = am.selectFixByPage(start,rows);
         result.setRows(pList);
         return result;
     }

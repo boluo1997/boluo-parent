@@ -101,6 +101,11 @@ public interface AdminMapper {
     //维修人员登录之前查看存在不存在该账号
     Fixer selectFixerByUserNameAndPassword(Fixer fixer);
 
+    //查询Fix表中搜索出的数据量
+    Integer selectFixCount();
+
+    //分页查看Fix表中数据
+    List<Fix> selectFixByPage(@Param("start") Integer start,@Param("rows") Integer rows);
 }
 
 

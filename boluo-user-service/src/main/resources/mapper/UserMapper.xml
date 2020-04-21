@@ -270,6 +270,7 @@
     <insert id="shenqingFix" parameterType="Fix">
         insert into fix(
             fixId,
+            user_id,
             user_name,
             gender,
             grade,
@@ -281,6 +282,7 @@
             image
         )values(
             #{fixId},
+            #{userId},
             #{userName},
             #{gender},
             #{grade},
