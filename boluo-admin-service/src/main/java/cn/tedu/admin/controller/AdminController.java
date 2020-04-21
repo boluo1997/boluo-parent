@@ -23,12 +23,13 @@ public class AdminController {
 
     //管理员登录
     @RequestMapping("login")
-    public SysResult doLogin(Admin admin){
+    public SysResult doLogin(Admin admin, HttpServletRequest req, HttpServletResponse res){
 
         String ticket = as.doLogin(admin);
 
         if(StringUtils.isNotEmpty(ticket)){
             //登录成功
+            CookieUtils.setCookie(req,res,"ADMIN_ID",ticket);
             return SysResult.ok();
         }else {
             //登录失败
@@ -65,7 +66,7 @@ public class AdminController {
     }
 
     //维修人员登录
-    @RequestMapping("fixer/login")        //
+    @RequestMapping("flogin")        //
     public SysResult doLogin(Fixer fixer, HttpServletRequest req, HttpServletResponse res){
 
         System.out.println("进来了!");
@@ -77,8 +78,11 @@ public class AdminController {
         if(StringUtils.isNotEmpty(ticket)){
             //登录成功,把ticket(userName)加入到cookie中返回给浏览器
             CookieUtils.setCookie(req,res,"FIXER_NAME",ticket);
+            System.out.println("ticket:"+ticket);
             CookieUtils.setCookie(req,res,"FIXER_ID",userId);
-            //System.out.println(CookieUtils.getCookieValue(req,"USER_NAME"));
+            System.out.println("fixerId:"+userId);
+            System.out.println(CookieUtils.getCookieValue(req,"FIXER_NAME"));
+            System.out.println(CookieUtils.getCookieValue(req,"FIXER_ID"));
             return SysResult.ok();
         }else {
             //登录失败
