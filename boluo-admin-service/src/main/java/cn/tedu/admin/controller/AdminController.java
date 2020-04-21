@@ -258,4 +258,18 @@ public class AdminController {
     }
 
 
+    //维修人员接单    往handle表中插入数据
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
