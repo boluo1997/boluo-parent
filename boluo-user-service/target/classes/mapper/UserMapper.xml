@@ -295,6 +295,12 @@
         );
     </insert>
 
+    <!--改变申请维修人员的状态码-->
+    <update id="changeStatus" parameterType="Integer">
+        update user set user_status = 2
+        where user_id = #{userId};
+    </update>
+
 </mapper>
 
 

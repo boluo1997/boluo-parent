@@ -100,4 +100,7 @@ public interface UserMapper {
 
     //宿舍报修申请表
     void shenqingFix(Fix fix);
+
+    //改变申请用户的状态码,从1-2   代表已经发出申请,等待维修人员接单
+    void changeStatus(int userId);
 }

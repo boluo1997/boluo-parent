@@ -111,11 +111,15 @@ public class UserController {
     }
 
 
-    //查看自己物资申请状态        1代表还没批准    2代表已经批准
+
+
+    //查看自己宿舍报修申请状态        1代表还没申请    2代表已经申请,等待维修人员接受   3代表已经接受  4代表已经完成
     @RequestMapping("chashenqing")
     public String chashenqing(Integer userId){
         return us.chashenqing(userId);
     }
+
+
 
     //修改个人信息
     @RequestMapping("xiugai")

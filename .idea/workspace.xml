@@ -5,12 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="244f92ec-cbda-46bd-8611-662a44175f0a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boluo-admin-service/src/main/java/cn/tedu/admin/mapper/AdminMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/boluo-admin-service/src/main/java/cn/tedu/admin/mapper/AdminMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boluo-admin-service/src/main/java/cn/tedu/admin/service/AdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/boluo-admin-service/src/main/java/cn/tedu/admin/service/AdminService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boluo-admin-service/src/main/resources/mapper/AdminMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/boluo-admin-service/src/main/resources/mapper/AdminMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boluo-common-resources/src/main/java/com/jt/common/pojo/Fix.java" beforeDir="false" afterPath="$PROJECT_DIR$/boluo-common-resources/src/main/java/com/jt/common/pojo/Fix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boluo-user-service/src/main/java/cn/tedu/user/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/boluo-user-service/src/main/java/cn/tedu/user/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boluo-user-service/src/main/java/cn/tedu/user/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/boluo-user-service/src/main/java/cn/tedu/user/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boluo-user-service/src/main/java/cn/tedu/user/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/boluo-user-service/src/main/java/cn/tedu/user/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/boluo-user-service/src/main/resources/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/boluo-user-service/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boluo-user-service/target/classes/cn/tedu/user/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/boluo-user-service/target/classes/cn/tedu/user/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boluo-user-service/target/classes/cn/tedu/user/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/boluo-user-service/target/classes/cn/tedu/user/mapper/UserMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boluo-user-service/target/classes/cn/tedu/user/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/boluo-user-service/target/classes/cn/tedu/user/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boluo-user-service/target/classes/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/boluo-user-service/target/classes/mapper/UserMapper.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -50,6 +53,20 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/boluo-user-service/src/main/java/cn/tedu/user/controller/UserController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="332">
+              <caret line="117" column="40" lean-forward="true" selection-start-line="117" selection-start-column="40" selection-end-line="117" selection-end-column="40" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#3336#3337#0" expanded="true" />
+                <element signature="e#3381#3382#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/boluo-admin-service/src/main/java/cn/tedu/admin/mapper/AdminMapper.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -58,6 +75,27 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/boluo-user-service/src/main/java/cn/tedu/user/service/UserService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="389">
+              <caret line="260" column="67" selection-start-line="260" selection-start-column="67" selection-end-line="260" selection-end-column="67" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/boluo-user-service/src/main/java/cn/tedu/user/mapper/UserMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="413">
+              <caret line="103" column="21" selection-start-line="103" selection-start-column="21" selection-end-line="103" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -72,31 +110,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/boluo-user-service/src/main/java/cn/tedu/user/service/UserService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6102">
-              <caret line="257" column="6" selection-start-line="257" selection-start-column="6" selection-end-line="257" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/boluo-user-service/src/main/java/cn/tedu/user/mapper/UserMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2619">
-              <caret line="101" column="30" selection-start-line="101" selection-start-column="30" selection-end-line="101" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/boluo-user-service/src/main/resources/mapper/UserMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="284" column="22" selection-start-line="284" selection-start-column="22" selection-end-line="284" selection-end-column="22" />
+            <state relative-caret-position="89">
+              <caret line="299" column="31" selection-start-line="299" selection-start-column="31" selection-end-line="299" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -118,23 +135,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/boluo-common-resources/src/main/java/com/jt/common/pojo/Fix.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="114" column="18" selection-start-line="114" selection-start-column="18" selection-end-line="114" selection-end-column="18" />
-              <folding>
-                <element signature="e#1892#1893#0" expanded="true" />
-                <element signature="e#1921#1922#0" expanded="true" />
-                <element signature="e#1962#1963#0" expanded="true" />
-                <element signature="e#1998#1999#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/boluo-admin-service/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
+            <state relative-caret-position="1647">
+              <caret line="105" selection-start-line="105" selection-end-line="105" />
             </state>
           </provider>
         </entry>
@@ -217,15 +219,15 @@
         <option value="$PROJECT_DIR$/boluo-common-resources/src/main/java/com/jt/common/pojo/Goods.java" />
         <option value="$PROJECT_DIR$/boluo-common-resources/src/main/java/com/jt/common/pojo/User.java" />
         <option value="$PROJECT_DIR$/boluo-common-resources/src/main/java/com/jt/common/pojo/Fixer.java" />
-        <option value="$PROJECT_DIR$/boluo-user-service/src/main/java/cn/tedu/user/service/UserService.java" />
-        <option value="$PROJECT_DIR$/boluo-user-service/src/main/java/cn/tedu/user/mapper/UserMapper.java" />
-        <option value="$PROJECT_DIR$/boluo-user-service/src/main/java/cn/tedu/user/controller/UserController.java" />
         <option value="$PROJECT_DIR$/boluo-admin-service/src/main/java/cn/tedu/admin/controller/AdminController.java" />
         <option value="$PROJECT_DIR$/boluo-admin-service/src/main/java/cn/tedu/admin/service/AdminService.java" />
         <option value="$PROJECT_DIR$/boluo-admin-service/src/main/java/cn/tedu/admin/mapper/AdminMapper.java" />
         <option value="$PROJECT_DIR$/boluo-admin-service/src/main/resources/mapper/AdminMapper.xml" />
         <option value="$PROJECT_DIR$/boluo-common-resources/src/main/java/com/jt/common/pojo/Fix.java" />
+        <option value="$PROJECT_DIR$/boluo-user-service/src/main/java/cn/tedu/user/service/UserService.java" />
+        <option value="$PROJECT_DIR$/boluo-user-service/src/main/java/cn/tedu/user/mapper/UserMapper.java" />
         <option value="$PROJECT_DIR$/boluo-user-service/src/main/resources/mapper/UserMapper.xml" />
+        <option value="$PROJECT_DIR$/boluo-user-service/src/main/java/cn/tedu/user/controller/UserController.java" />
       </list>
     </option>
   </component>
@@ -377,6 +379,74 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="boluo-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="boluo-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="boluo-common-resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="boluo-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="boluo-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="boluo-common-resources" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="boluo-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="boluo-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="boluo-common-resources" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="boluo-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="boluo-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="boluo-common-resources" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="boluo-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="boluo-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="boluo-common-resources" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="boluo-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="boluo-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="boluo-common-resources" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="jt" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="boluo-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="boluo-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="boluo-common-resources" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="jt" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="boluo-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="boluo-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="boluo-common-resources" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="jt" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="pojo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="boluo-parent" type="b2602c69:ProjectViewProjectNode" />
@@ -535,7 +605,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.StarterAdmin">
+  <component name="RunManager" selected="Spring Boot.StarterUser">
     <configuration name="StarterAdmin" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="boluo-admin-service" />
       <extension name="coverage">
@@ -603,8 +673,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.StarterAdmin" />
         <item itemvalue="Spring Boot.StarterUser" />
+        <item itemvalue="Spring Boot.StarterAdmin" />
         <item itemvalue="Spring Boot.StarterImg" />
         <item itemvalue="Spring Boot.StarterEServer01" />
         <item itemvalue="Spring Boot.StarterGiveLose" />
@@ -705,18 +775,18 @@
       <workItem from="1587024324005" duration="267000" />
       <workItem from="1587118574577" duration="152000" />
       <workItem from="1587358230244" duration="18540000" />
-      <workItem from="1587469187581" duration="1163000" />
+      <workItem from="1587469187581" duration="2760000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="339341000" />
+    <option name="totallyTimeSpent" value="340938000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20174263" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21782842" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1234,16 +1304,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/boluo-user-service/src/main/java/cn/tedu/user/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4482">
-          <caret line="188" column="32" selection-start-line="188" selection-start-column="32" selection-end-line="188" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/boluo-common-resources/src/main/java/com/jt/common/pojo/Shenqing.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1566">
@@ -1282,23 +1342,6 @@
             <element signature="e#1567#1568#0" expanded="true" />
             <element signature="e#1615#1616#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boluo-user-service/src/main/java/cn/tedu/user/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6102">
-          <caret line="257" column="6" selection-start-line="257" selection-start-column="6" selection-end-line="257" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boluo-user-service/src/main/java/cn/tedu/user/mapper/UserMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2619">
-          <caret line="101" column="30" selection-start-line="101" selection-start-column="30" selection-end-line="101" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -1359,21 +1402,44 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/boluo-common-resources/src/main/java/com/jt/common/pojo/Fix.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="114" column="18" selection-start-line="114" selection-start-column="18" selection-end-line="114" selection-end-column="18" />
+        <state relative-caret-position="1647">
+          <caret line="105" selection-start-line="105" selection-end-line="105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boluo-user-service/src/main/java/cn/tedu/user/mapper/UserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="103" column="21" selection-start-line="103" selection-start-column="21" selection-end-line="103" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boluo-user-service/src/main/java/cn/tedu/user/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="260" column="67" selection-start-line="260" selection-start-column="67" selection-end-line="260" selection-end-column="67" />
           <folding>
-            <element signature="e#1892#1893#0" expanded="true" />
-            <element signature="e#1921#1922#0" expanded="true" />
-            <element signature="e#1962#1963#0" expanded="true" />
-            <element signature="e#1998#1999#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/boluo-user-service/src/main/resources/mapper/UserMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="284" column="22" selection-start-line="284" selection-start-column="22" selection-end-line="284" selection-end-column="22" />
+        <state relative-caret-position="89">
+          <caret line="299" column="31" selection-start-line="299" selection-start-column="31" selection-end-line="299" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boluo-user-service/src/main/java/cn/tedu/user/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="117" column="40" lean-forward="true" selection-start-line="117" selection-start-column="40" selection-end-line="117" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3336#3337#0" expanded="true" />
+            <element signature="e#3381#3382#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

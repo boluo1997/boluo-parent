@@ -258,6 +258,8 @@ public class UserService {
     //宿舍报修申请表
     public void shenqingFix(Fix fix) {
         um.shenqingFix(fix);
+        um.changeStatus(fix.getUserId());       //申请之后把该用户的状态码从1改为2     代表已经申请,等待维修人员接待
+
     }
 }
 
