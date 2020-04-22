@@ -82,6 +82,23 @@ fixer.boluo.com			是管理员的页面		---
 
 
 
+handle表		维修人员接受维修申请之后,把数据存到这个表中
+
+~~~sql
+CREATE TABLE handle(
+	handle_id INT PRIMARY KEY AUTO_INCREMENT,
+	user_id INT,
+	user_name VARCHAR(20),
+	fix_id INT,
+	handle_status INT
+)
+
+~~~
+
+
+
+
+
 
 
 

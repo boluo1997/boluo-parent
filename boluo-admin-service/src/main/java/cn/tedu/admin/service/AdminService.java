@@ -284,6 +284,13 @@ public class AdminService {
         result.setRows(pList);
         return result;
     }
+
+
+    //维修人员接单,把数据存到handle表中
+    public void handle(Handle handle) {
+        am.handle(handle);
+        am.changeUserStatus(handle.getUserId());
+    }
 }
 
 

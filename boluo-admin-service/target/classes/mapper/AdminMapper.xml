@@ -140,7 +140,7 @@
 
     <!--从申请表中把该条信息删除-->
     <delete id="shanshenqing" parameterType="Integer">
-        delete from shenqing
+        delete from fix
         where user_id = #{userId};
     </delete>
 
@@ -262,6 +262,28 @@
         from fix
         limit #{start},#{rows};
     </select>
+
+
+    <!-- 维修人员接单,把数据存到handle表中 -->
+    <insert id="handle" parameterType="Handle">
+        insert into handle(
+            user_id,
+            user_name,
+            fix_id,
+            handle_status
+        )values(
+            #{userId},
+            #{userName},
+            #{fixId},
+            1
+        )
+    </insert>
+
+    <!-- 把用户的状态码改为3 -->
+    <update id="changeUserStatus" parameterType="Integer">
+        update user
+        set user_status = 3;
+    </update>
 
 </mapper>
 

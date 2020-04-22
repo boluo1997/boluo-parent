@@ -3,7 +3,7 @@ package com.jt.common.pojo;
 public class Handle {
 
     private int handleId;       //表ID   (自增)
-    private int userid;         //用户ID(cookie)
+    private int userId;         //用户ID(cookie)
     private String userName;    //用户名(cookie)
     private int fixId;          //维修人员ID(cookie)
     private int handleStatus;   //表状态码(默认1  完成之后变成2)
@@ -16,12 +16,12 @@ public class Handle {
         this.handleId = handleId;
     }
 
-    public int getUserid() {
-        return userid;
+    public int getUserId() {
+        return userId;
     }
 
-    public void setUserid(int userid) {
-        this.userid = userid;
+    public void setUserId(int userid) {
+        this.userId = userid;
     }
 
     public String getUserName() {
@@ -52,7 +52,7 @@ public class Handle {
     public String toString() {
         return "Handle{" +
                 "handleId=" + handleId +
-                ", userid=" + userid +
+                ", userId=" + userId +
                 ", userName='" + userName + '\'' +
                 ", fixId=" + fixId +
                 ", handleStatus=" + handleStatus +

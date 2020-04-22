@@ -258,7 +258,18 @@ public class AdminController {
     }
 
 
-    //维修人员接单    往handle表中插入数据
+    //维修人员接单    往handle表中插入数据       //再把该用户的状态码改为3代表已经接受
+    @RequestMapping("handle")
+    public SysResult handle(Handle handle){
+        try{
+
+            as.handle(handle);
+            return SysResult.ok();
+        }catch (Exception e){
+            e.printStackTrace();
+            return SysResult.build(201,"接受失败!",null);
+        }
+    }
 
 
 }

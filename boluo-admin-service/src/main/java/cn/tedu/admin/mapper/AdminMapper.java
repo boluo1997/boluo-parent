@@ -106,6 +106,12 @@ public interface AdminMapper {
 
     //分页查看Fix表中数据
     List<Fix> selectFixByPage(@Param("start") Integer start,@Param("rows") Integer rows);
+
+    //维修人员接单,把数据存到handle表中
+    void handle(Handle handle);
+
+    //把用户的状态码改为3,代表维修人员已经接受
+    void changeUserStatus(int userId);
 }
 
 
