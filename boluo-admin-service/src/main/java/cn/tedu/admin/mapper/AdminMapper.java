@@ -112,6 +112,21 @@ public interface AdminMapper {
 
     //把用户的状态码改为3,代表维修人员已经接受
     void changeUserStatus(int userId);
+
+    //查看handle表中的数量
+    Integer selectHandleCount();
+
+    //查看我的任务
+    List<Fix> selectHandleByPage(@Param("start") Integer start,@Param("rows") Integer rows,@Param("fixId") Integer fixId);
+
+    //维修人员完成订单
+    void finishHandle(Integer handle);
+
+    //把用户状态码改为4
+    void changeUserStatus4(Integer userId);
+
+    //维修人员查看自己已经完成的任务
+    List<Fix> selectHandleByPage2(@Param("start") Integer start,@Param("rows") Integer rows,@Param("fixId") Integer fixId);
 }
 
 

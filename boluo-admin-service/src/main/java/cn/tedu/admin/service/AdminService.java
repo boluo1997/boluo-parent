@@ -291,6 +291,48 @@ public class AdminService {
         am.handle(handle);
         am.changeUserStatus(handle.getUserId());
     }
+
+
+    //维修人员查看我的任务
+    public EasyUIResult checkMyTask(Integer page, Integer rows, Integer fixId) {
+
+        //准备一个返回对象
+        EasyUIResult result = new EasyUIResult();
+        //封装total
+        Integer total = am.selectHandleCount();
+        result.setTotal(total);
+
+        //封装返回分页数据rows List<Volunteer>
+        Integer start = (page-1)*rows;
+        List<Fix> pList = am.selectHandleByPage(start,rows,fixId);
+        result.setRows(pList);
+        return result;
+    }
+
+
+    //维修人员完成订单
+    public void finishHandle(Integer handle) {
+        am.finishHandle(handle);
+    }
+
+    //把用户状态码改为4
+    public void changeUserStatus4(Integer userId) {
+        am.changeUserStatus4(userId);
+    }
+
+    public EasyUIResult checkTask(Integer page, Integer rows, Integer fixId) {
+        //准备一个返回对象
+        EasyUIResult result = new EasyUIResult();
+        //封装total
+        Integer total = am.selectHandleCount();
+        result.setTotal(total);
+
+        //封装返回分页数据rows List<Volunteer>
+        Integer start = (page-1)*rows;
+        List<Fix> pList = am.selectHandleByPage2(start,rows,fixId);
+        result.setRows(pList);
+        return result;
+    }
 }
 
 

@@ -257,7 +257,6 @@ public class AdminController {
         return as.checkFix(page,rows);
     }
 
-
     //维修人员接单    往handle表中插入数据       //再把该用户的状态码改为3代表已经接受
     @RequestMapping("handle")
     public SysResult handle(Handle handle){
@@ -271,6 +270,33 @@ public class AdminController {
         }
     }
 
+
+    //维修人员查看我的任务
+    @RequestMapping("checkMyTask")
+    public EasyUIResult checkMyTask(Integer page, Integer rows,Integer fixId){
+        return as.checkMyTask(page,rows,fixId);
+    }
+
+
+    //维修人员完成订单
+    @RequestMapping("finishHandle")
+    public SysResult finishHandle(Integer handle,Integer userId){
+        try{
+            as.finishHandle(handle);
+            as.changeUserStatus4(userId);
+            return SysResult.ok();
+        }catch (Exception e){
+            e.printStackTrace();
+            return SysResult.build(201,"请求失败!",null);
+        }
+    }
+
+
+    //维修人员查看自己已经维修完成的订单
+    @RequestMapping("checkTask")
+    public EasyUIResult checkTask(Integer page, Integer rows,Integer fixId){
+        return as.checkTask(page,rows,fixId);
+    }
 
 }
 

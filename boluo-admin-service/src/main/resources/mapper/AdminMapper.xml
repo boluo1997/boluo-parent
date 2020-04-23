@@ -285,6 +285,43 @@
         set user_status = 3;
     </update>
 
+    <!-- handle表中的数量 -->
+    <select id="selectHandleCount" resultType="Integer">
+        select count(handle_id)
+        from handle;
+    </select>
+
+    <!-- 维修人员查看我的任务 -->
+    <select id="selectHandleByPage" resultType="Handle">
+        select *
+        from handle
+        where fix_id = #{fixId}
+        limit #{start},#{rows};
+    </select>
+
+    <!-- 维修人员完成订单 把订单状态码从1改成2 -->
+    <update id="finishHandle" parameterType="Integer">
+        update handle
+        set handle_status = 2;
+    </update>
+
+
+    <!-- 把用户的状态码改为4 -->
+    <update id="changeUserStatus4">
+        update user
+        set user_status = 4
+        where user_id = #{userId};
+    </update>
+
+
+    <!-- 维修人员查看自己已经完成的任务 -->
+    <select id="selectHandleByPage2" parameterType="Integer" resultType="Handle">
+        select *
+        from handle
+        where fix_id = #{fixId} and handle_status = 2
+        limit #{start},#{rows};
+    </select>
+
 </mapper>
 
 
