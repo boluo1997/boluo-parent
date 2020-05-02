@@ -7,6 +7,7 @@ public class Handle {
     private String userName;    //用户名(cookie)
     private int fixId;          //维修人员ID(cookie)
     private int handleStatus;   //表状态码(默认1  完成之后变成2)
+    private String fixerName;   //维修人员姓名
 
     public int getHandleId() {
         return handleId;
@@ -48,6 +49,14 @@ public class Handle {
         this.handleStatus = handleStatus;
     }
 
+    public String getFixerName() {
+        return fixerName;
+    }
+
+    public void setFixerName(String fixerName) {
+        this.fixerName = fixerName;
+    }
+
     @Override
     public String toString() {
         return "Handle{" +
@@ -56,7 +65,7 @@ public class Handle {
                 ", userName='" + userName + '\'' +
                 ", fixId=" + fixId +
                 ", handleStatus=" + handleStatus +
+                ", fixerName='" + fixerName + '\'' +
                 '}';
     }
-
 }

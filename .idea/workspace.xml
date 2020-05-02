@@ -15,6 +15,7 @@
       <change beforePath="$PROJECT_DIR$/boluo-admin-service/target/classes/cn/tedu/admin/mapper/AdminMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/boluo-admin-service/target/classes/cn/tedu/admin/mapper/AdminMapper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/boluo-admin-service/target/classes/cn/tedu/admin/service/AdminService.class" beforeDir="false" afterPath="$PROJECT_DIR$/boluo-admin-service/target/classes/cn/tedu/admin/service/AdminService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/boluo-admin-service/target/classes/mapper/AdminMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/boluo-admin-service/target/classes/mapper/AdminMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boluo-common-resources/src/main/java/com/jt/common/pojo/Handle.java" beforeDir="false" afterPath="$PROJECT_DIR$/boluo-common-resources/src/main/java/com/jt/common/pojo/Handle.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -43,8 +44,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/boluo-admin-service/src/main/java/cn/tedu/admin/service/AdminService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7884">
-              <caret line="331" column="46" selection-start-line="331" selection-start-column="46" selection-end-line="331" selection-end-column="46" />
+            <state relative-caret-position="326">
+              <caret line="367" column="21" selection-start-line="367" selection-start-column="21" selection-end-line="367" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#5128#5129#0" expanded="true" />
@@ -53,16 +54,18 @@
                 <element signature="e#8051#8052#0" expanded="true" />
                 <element signature="e#8120#8121#0" expanded="true" />
                 <element signature="e#8164#8165#0" expanded="true" />
+                <element signature="e#9127#9128#0" expanded="true" />
+                <element signature="e#9164#9165#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/boluo-admin-service/src/main/java/cn/tedu/admin/mapper/AdminMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3375">
-              <caret line="128" column="33" selection-start-line="128" selection-start-column="14" selection-end-line="128" selection-end-column="33" />
+            <state relative-caret-position="297">
+              <caret line="140" column="80" selection-start-line="140" selection-start-column="80" selection-end-line="140" selection-end-column="80" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -73,8 +76,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/boluo-admin-service/src/main/resources/mapper/AdminMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="8640">
-              <caret line="320" column="50" selection-start-line="320" selection-start-column="50" selection-end-line="320" selection-end-column="50" />
+            <state relative-caret-position="602">
+              <caret line="351" column="31" selection-start-line="351" selection-start-column="31" selection-end-line="351" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -82,8 +85,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/boluo-common-resources/src/main/java/com/jt/common/pojo/Handle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            <state relative-caret-position="218">
+              <caret line="60" column="18" selection-start-line="60" selection-start-column="18" selection-end-line="60" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -139,17 +142,21 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/boluo-admin-service/src/main/java/cn/tedu/admin/controller/AdminController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="295" column="30" selection-start-line="295" selection-start-column="21" selection-end-line="295" selection-end-column="30" />
+            <state relative-caret-position="318">
+              <caret line="322" column="24" lean-forward="true" selection-start-line="322" selection-start-column="24" selection-end-line="322" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#7779#7780#0" expanded="true" />
                 <element signature="e#7824#7825#0" expanded="true" />
                 <element signature="e#8871#8872#0" expanded="true" />
                 <element signature="e#8923#8924#0" expanded="true" />
+                <element signature="e#9038#9039#0" expanded="true" />
+                <element signature="e#9085#9086#0" expanded="true" />
+                <element signature="e#9509#9510#0" expanded="true" />
+                <element signature="e#9550#9551#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -261,8 +268,8 @@
         <option value="$PROJECT_DIR$/boluo-common-resources/src/main/java/com/jt/common/pojo/Handle.java" />
         <option value="$PROJECT_DIR$/boluo-admin-service/src/main/java/cn/tedu/admin/controller/AdminController.java" />
         <option value="$PROJECT_DIR$/boluo-admin-service/src/main/java/cn/tedu/admin/service/AdminService.java" />
-        <option value="$PROJECT_DIR$/boluo-admin-service/src/main/java/cn/tedu/admin/mapper/AdminMapper.java" />
         <option value="$PROJECT_DIR$/boluo-admin-service/src/main/resources/mapper/AdminMapper.xml" />
+        <option value="$PROJECT_DIR$/boluo-admin-service/src/main/java/cn/tedu/admin/mapper/AdminMapper.java" />
       </list>
     </option>
   </component>
@@ -284,8 +291,8 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="50" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-10" />
     <option name="width" value="1860" />
     <option name="height" value="1050" />
   </component>
@@ -298,6 +305,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -595,8 +604,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -610,7 +617,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/boluo-animal-service/src/main/java" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Demo09_samll_demo/demo03_leetcode" />
+    <property name="last_opened_file_path" value="F:/wubin_nginx/nginx-1.9.9/boluo" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -814,16 +821,20 @@
       <workItem from="1587516674029" duration="4738000" />
       <workItem from="1587556709096" duration="9153000" />
       <workItem from="1587606466645" duration="158000" />
+      <workItem from="1587615084385" duration="2087000" />
+      <workItem from="1587645800111" duration="244000" />
+      <workItem from="1587793529830" duration="2931000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="359218000" />
+    <option name="totallyTimeSpent" value="364480000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="40" y="0" width="1488" height="840" extended-state="1" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23636363" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21983914" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -833,7 +844,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.33898306" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.33994335" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.8528572" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1359,46 +1370,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/boluo-admin-service/src/main/java/cn/tedu/admin/service/AdminService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7884">
-          <caret line="331" column="46" selection-start-line="331" selection-start-column="46" selection-end-line="331" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#5128#5129#0" expanded="true" />
-            <element signature="e#5165#5166#0" expanded="true" />
-            <element signature="e#8012#8013#0" expanded="true" />
-            <element signature="e#8051#8052#0" expanded="true" />
-            <element signature="e#8120#8121#0" expanded="true" />
-            <element signature="e#8164#8165#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boluo-admin-service/src/main/java/cn/tedu/admin/mapper/AdminMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3375">
-          <caret line="128" column="33" selection-start-line="128" selection-start-column="14" selection-end-line="128" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boluo-admin-service/src/main/resources/mapper/AdminMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8640">
-          <caret line="320" column="50" selection-start-line="320" selection-start-column="50" selection-end-line="320" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boluo-common-resources/src/main/java/com/jt/common/pojo/Handle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/boluo-common-resources/src/main/java/com/jt/common/pojo/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -1470,16 +1441,62 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/boluo-common-resources/src/main/java/com/jt/common/pojo/Handle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="60" column="18" selection-start-line="60" selection-start-column="18" selection-end-line="60" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/boluo-admin-service/src/main/java/cn/tedu/admin/controller/AdminController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="295" column="30" selection-start-line="295" selection-start-column="21" selection-end-line="295" selection-end-column="30" />
+        <state relative-caret-position="318">
+          <caret line="322" column="24" lean-forward="true" selection-start-line="322" selection-start-column="24" selection-end-line="322" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#7779#7780#0" expanded="true" />
             <element signature="e#7824#7825#0" expanded="true" />
             <element signature="e#8871#8872#0" expanded="true" />
-            <element signature="e#8925#8926#0" expanded="true" />
+            <element signature="e#8923#8924#0" expanded="true" />
+            <element signature="e#9038#9039#0" expanded="true" />
+            <element signature="e#9085#9086#0" expanded="true" />
+            <element signature="e#9509#9510#0" expanded="true" />
+            <element signature="e#9550#9551#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boluo-admin-service/src/main/java/cn/tedu/admin/service/AdminService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="367" column="21" selection-start-line="367" selection-start-column="21" selection-end-line="367" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#5128#5129#0" expanded="true" />
+            <element signature="e#5165#5166#0" expanded="true" />
+            <element signature="e#8012#8013#0" expanded="true" />
+            <element signature="e#8051#8052#0" expanded="true" />
+            <element signature="e#8120#8121#0" expanded="true" />
+            <element signature="e#8164#8165#0" expanded="true" />
+            <element signature="e#9127#9128#0" expanded="true" />
+            <element signature="e#9164#9165#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boluo-admin-service/src/main/resources/mapper/AdminMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="602">
+          <caret line="351" column="31" selection-start-line="351" selection-start-column="31" selection-end-line="351" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boluo-admin-service/src/main/java/cn/tedu/admin/mapper/AdminMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="140" column="80" selection-start-line="140" selection-start-column="80" selection-end-line="140" selection-end-column="80" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

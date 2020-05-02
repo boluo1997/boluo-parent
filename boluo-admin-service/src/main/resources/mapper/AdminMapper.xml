@@ -270,12 +270,14 @@
             user_id,
             user_name,
             fix_id,
-            handle_status
+            handle_status,
+            fixer_name
         )values(
             #{userId},
             #{userName},
             #{fixId},
-            1
+            1,
+            #{fixerName}
         )
     </insert>
 
@@ -319,6 +321,34 @@
         select *
         from handle
         where fix_id = #{fixId} and handle_status = 2
+        limit #{start},#{rows};
+    </select>
+
+
+    <!-- 查询维修人员总数量 -->
+    <select id="selectFixerCount" resultType="Integer">
+        select count(fixer_id)
+        from fixer;
+    </select>
+
+
+    <!-- 分页查看所有维修人员 -->
+    <select id="selectFixerByPage" resultType="Fixer">
+        select *
+        from fixer
+        limit #{start},#{rows};
+    </select>
+
+    <!-- 删除维修人员 -->
+    <delete id="shanfixer">
+        delete from fixer
+        where fixer_id = #{fixerId};
+    </delete>
+
+    <!-- 管理员查看所有的订单 -->
+    <select id="selectHandleByPage3" parameterType="Integer" resultType="Handle">
+        select *
+        from handle
         limit #{start},#{rows};
     </select>
 

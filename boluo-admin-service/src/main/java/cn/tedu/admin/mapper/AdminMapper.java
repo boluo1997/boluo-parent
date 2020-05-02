@@ -127,6 +127,18 @@ public interface AdminMapper {
 
     //维修人员查看自己已经完成的任务
     List<Fix> selectHandleByPage2(@Param("start") Integer start,@Param("rows") Integer rows,@Param("fixId") Integer fixId);
+
+    //查询所有维修人员的总数量
+    Integer selectFixerCount();
+
+    //分页查询所有的维修人员
+    List<Fixer> selectFixerByPage(@Param("start") Integer start,@Param("rows") Integer rows);
+
+    //删除维修人员
+    void shanfixer(Integer fixerId);
+
+    //管理员查看所有订单
+    List<Handle> selectHandleByPage3(@Param("start") Integer start,@Param("rows") Integer rows);
 }
 
 

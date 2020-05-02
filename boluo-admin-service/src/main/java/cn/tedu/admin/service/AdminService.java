@@ -333,6 +333,42 @@ public class AdminService {
         result.setRows(pList);
         return result;
     }
+
+
+    //查看所有的维修人员
+    public EasyUIResult checkFixer(Integer page, Integer rows) {
+        //准备一个返回对象
+        EasyUIResult result = new EasyUIResult();
+        //封装total
+        Integer total = am.selectFixerCount();
+        result.setTotal(total);
+
+        //封装返回分页数据rows List<Volunteer>
+        Integer start = (page-1)*rows;
+        List<Fixer> pList = am.selectFixerByPage(start,rows);
+        result.setRows(pList);
+        return result;
+    }
+
+    //删除维修人员
+    public void shanfixer(Integer fixerId) {
+        am.shanfixer(fixerId);
+    }
+
+    //管理员查看所有的订单
+    public EasyUIResult allOrder(Integer page, Integer rows) {
+        //准备一个返回对象
+        EasyUIResult result = new EasyUIResult();
+        //封装total
+        Integer total = am.selectHandleCount();
+        result.setTotal(total);
+
+        //封装返回分页数据rows List<Volunteer>
+        Integer start = (page-1)*rows;
+        List<Handle> pList = am.selectHandleByPage3(start,rows);
+        result.setRows(pList);
+        return result;
+    }
 }
 
 

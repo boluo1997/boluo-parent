@@ -298,6 +298,31 @@ public class AdminController {
         return as.checkTask(page,rows,fixId);
     }
 
+    //查看所有的维修人员
+    @RequestMapping("checkFixer")
+    public EasyUIResult checkFixer(Integer page, Integer rows){
+        return as.checkFixer(page,rows);
+    }
+
+
+    //删除维修人员
+    @RequestMapping("shanfixer")
+    public SysResult shanfixer(Integer fixerId){
+        try{
+            as.shanfixer(fixerId);
+            return SysResult.ok();
+        }catch (Exception e){
+            e.printStackTrace();
+            return SysResult.build(201,"删除失败!",null);
+        }
+    }
+
+    //管理员查看所有订单
+    @RequestMapping("allOrder")
+    public EasyUIResult allOrder(Integer page, Integer rows){
+        return as.allOrder(page,rows);
+    }
+
 }
 
 
