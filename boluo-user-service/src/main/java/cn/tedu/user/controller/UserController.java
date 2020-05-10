@@ -167,7 +167,11 @@ public class UserController {
         return us.checkVolunteer(userId);
     }
 
-    //测试一下
+    //领养处---模糊查询
+    @RequestMapping("search")
+    public EasyUIResult queryAnimal(Integer page, Integer rows,String text){
+        return us.queryAnimal(page,rows,text);
+    }
 }
 
 

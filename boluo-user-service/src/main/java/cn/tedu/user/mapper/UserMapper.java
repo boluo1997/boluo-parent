@@ -52,4 +52,10 @@ public interface UserMapper {
 
     //查看自己的志愿者状态
     Volunteer checkVolunteer(Integer userId);
+
+    //领养处---模糊查询---查询出的动物总数量
+    Integer selectAnimalCount();
+
+    //领养处---模糊查询
+    List<Animal> selectAnimalByPage(@Param("start") Integer start,@Param("rows") Integer rows,@Param("text")String text);
 }

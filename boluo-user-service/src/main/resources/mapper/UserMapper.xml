@@ -147,6 +147,20 @@
         where user_id = #{userId};
     </select>
 
+    <!-- 领养处  模糊查询  查询出的动物总数量 -->
+    <select id="selectAnimalCount" resultType="Integer">
+        select count(animal_id)
+        from animal;
+    </select>
+
+    <!-- 领养处  模糊查询 -->
+    <select id="selectAnimalByPage" resultType="Animal">
+        SELECT *
+        FROM animal
+        WHERE give_title LIKE concat('%',#{text},'%')
+        limit #{start},#{rows};
+    </select>
+
 </mapper>
 
 

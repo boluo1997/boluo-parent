@@ -157,6 +157,21 @@ public class UserService {
     public Volunteer checkVolunteer(Integer userId) {
         return um.checkVolunteer(userId);
     }
+
+    //领养处---模糊查询
+    public EasyUIResult queryAnimal(Integer page, Integer rows,String text) {
+        //准备一个返回对象
+        EasyUIResult result = new EasyUIResult();
+        //封装total
+        Integer total = um.selectAnimalCount();
+        result.setTotal(total);
+
+        //封装返回分页数据rows List<Animal>
+        Integer start = (page-1)*rows;
+        List<Animal> pList = um.selectAnimalByPage(start,rows,text);
+        result.setRows(pList);
+        return result;
+    }
 }
 
 
