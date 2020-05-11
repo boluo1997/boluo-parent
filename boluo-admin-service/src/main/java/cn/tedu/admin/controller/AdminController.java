@@ -101,4 +101,24 @@ public class AdminController {
         return as.queryPageAlreadyVolunteer(page,rows);
     }
 
+    //分页查看评论
+    @RequestMapping("queryCheckComment")
+    public EasyUIResult queryCheckComment(Integer page, Integer rows){
+        return as.queryCheckComment(page,rows);
+    }
+
+    //删除评论
+    @RequestMapping("deleteComment")
+    public SysResult deleteComment(Integer leaveId){
+        try{
+            as.deleteComment(leaveId);
+            return SysResult.ok();
+        }catch (Exception e){
+            e.printStackTrace();
+            return SysResult.build(201,"删除用户失败!",null);
+        }
+    }
+
+
+
 }

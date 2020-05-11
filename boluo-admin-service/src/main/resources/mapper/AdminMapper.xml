@@ -99,4 +99,25 @@
         limit #{start},#{rows};
     </select>
 
+    <!-- 查询评论总数量 -->
+    <select id="selectCommentCount" resultType="Integer">
+        select count(leave_id)
+        from leavemessage;
+    </select>
+
+    <!-- 分页查看评论 -->
+    <select id="selectCommentByPage" parameterType="Integer" resultType="Comment">
+        SELECT leavemessage.leave_id,lose.lose_title,leavemessage.user_name,leavemessage.leave_message
+        FROM leavemessage,lose
+        WHERE leavemessage.leave_id = lose.lose_id
+        LIMIT #{start},#{rows};
+    </select>
+
+    <!-- 删除评论 -->
+    <delete id="deleteComment" parameterType="Integer">
+        delete
+        from leavemessage
+        where leave_id = #{leaveId};
+    </delete>
+
 </mapper>

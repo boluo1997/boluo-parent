@@ -1,10 +1,7 @@
 package cn.tedu.admin.service;
 
 import cn.tedu.admin.mapper.AdminMapper;
-import com.jt.common.pojo.Admin;
-import com.jt.common.pojo.Adopt;
-import com.jt.common.pojo.User;
-import com.jt.common.pojo.Volunteer;
+import com.jt.common.pojo.*;
 import com.jt.common.vo.EasyUIResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -117,6 +114,25 @@ public class AdminService {
         return result;
     }
 
+    //分页查看评论
+    public EasyUIResult queryCheckComment(Integer page, Integer rows) {
+        //准备一个返回对象
+        EasyUIResult result = new EasyUIResult();
+        //封装total
+        Integer total = am.selectCommentCount();
+        result.setTotal(total);
+
+        //封装返回分页数据rows List<Volunteer>
+        Integer start = (page-1)*rows;
+        List<Comment> pList = am.selectCommentByPage(start,rows);
+        result.setRows(pList);
+        return result;
+    }
+
+    //删除评论
+    public void deleteComment(Integer leaveId) {
+        am.deleteComment(leaveId);
+    }
 }
 
 

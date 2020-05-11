@@ -17,7 +17,6 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="boluo-search-service" target="1.7" />
       <module name="boluo-zuul-client01" target="1.7" />
       <module name="boluo-zuul-service" target="1.7" />
     </bytecodeTargetLevel>

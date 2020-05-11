@@ -1,9 +1,6 @@
 package cn.tedu.admin.mapper;
 
-import com.jt.common.pojo.Admin;
-import com.jt.common.pojo.Adopt;
-import com.jt.common.pojo.User;
-import com.jt.common.pojo.Volunteer;
+import com.jt.common.pojo.*;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
@@ -47,7 +44,14 @@ public interface AdminMapper {
     //查看志愿者名单
     List<Volunteer> selectAlreadyVolunteerByPage(@Param("start") Integer start,@Param("rows") Integer rows);
 
+    //查询评论总数量
+    Integer selectCommentCount();
 
+    //分页查看评论
+    List<Comment> selectCommentByPage(@Param("start") Integer start, @Param("rows") Integer rows);
+
+    //删除评论
+    void deleteComment(Integer leaveId);
 }
 
 
