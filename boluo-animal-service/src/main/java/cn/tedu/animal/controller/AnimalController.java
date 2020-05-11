@@ -28,7 +28,7 @@ public class AnimalController {
         return as.queryOneAnimal(animalId);
     }
 
-    //管理员添加动物信息     //localhost:10002/animal/save?animalName=斌哥&animalImage=f.jpg&animalType=狗&animalInfo=一只哈士奇
+    //添加动物信息     //localhost:10002/animal/save?animalName=斌哥&animalImage=f.jpg&animalType=狗&animalInfo=一只哈士奇
     @RequestMapping("save")
     public SysResult addAnimal(Animal animal){
         System.out.println("进来了");

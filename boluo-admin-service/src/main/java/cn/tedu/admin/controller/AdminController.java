@@ -43,6 +43,7 @@ public class AdminController {
     @RequestMapping("delete/{userId}")
     public SysResult deleteUser(@PathVariable Integer userId){
         try{
+            System.out.println("userId"+userId);
             as.deleteUser(userId);
             return SysResult.ok();
         }catch (Exception e){
@@ -119,6 +120,36 @@ public class AdminController {
         }
     }
 
+
+    //送养动物信息管理--删除
+    @RequestMapping("deleteAnimal/{animalId}")
+    public SysResult deleteAnimal(@PathVariable Integer animalId){
+        try{
+            as.deleteAnimal(animalId);
+            return SysResult.ok();
+        }catch (Exception e){
+            e.printStackTrace();
+            return SysResult.build(201,"删除用户失败!",null);
+        }
+    }
+
+    //丢失动物信息管理--删除
+    @RequestMapping("deleteLose/{loseId}")
+    public SysResult deleteLose(@PathVariable Integer loseId){
+        try{
+            as.deleteLose(loseId);
+            return SysResult.ok();
+        }catch (Exception e){
+            e.printStackTrace();
+            return SysResult.build(201,"删除用户失败!",null);
+        }
+    }
+
+    //查看领养名单
+    @RequestMapping("queryAdoption")
+    public EasyUIResult queryAdoption(Integer page, Integer rows){
+        return as.queryAdoption(page,rows);
+    }
 
 
 }

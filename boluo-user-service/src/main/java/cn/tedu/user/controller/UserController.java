@@ -51,7 +51,7 @@ public class UserController {
     }
 
     //登录
-    @RequestMapping("login")        //
+    @RequestMapping("login")
     public SysResult doLogin(User user, HttpServletRequest req, HttpServletResponse res){
 
         String ticket = us.doLogin(user);

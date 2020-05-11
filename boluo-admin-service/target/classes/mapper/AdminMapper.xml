@@ -120,4 +120,31 @@
         where leave_id = #{leaveId};
     </delete>
 
+    <!-- 送养动物信息管理 删除 -->
+    <delete id="deleteAnimalByAnimalId" parameterType="Integer">
+        delete
+        from animal
+        where animal_id = #{animalId};
+    </delete>
+
+    <!-- 丢失动物信息管理 删除 -->
+    <delete id="deleteLose" parameterType="Integer">
+        delete
+        from lose
+        where lose_id = #{loseId};
+    </delete>
+
+    <!-- 查看领养名单-查出的总数量 -->
+    <select id="selectAdoptionCount" resultType="Integer">
+        select count(user_id)
+        from adopt;
+    </select>
+
+    <!-- 分页查看领养名单 -->
+    <select id="selectAdoptionByPage" parameterType="Integer" resultType="Adoption">
+        SELECT adopt.user_id,user.user_name,adopt.animal_id,animal.animal_name,adopt.adopt_create_time
+        FROM USER USER JOIN adopt adopt ON user.user_id=adopt.user_id JOIN animal animal ON adopt.animal_id=animal.animal_id
+    </select>
+
+
 </mapper>

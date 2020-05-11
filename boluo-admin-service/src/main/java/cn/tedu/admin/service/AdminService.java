@@ -133,6 +133,31 @@ public class AdminService {
     public void deleteComment(Integer leaveId) {
         am.deleteComment(leaveId);
     }
+
+    //送养动物信息管理--删除
+    public void deleteAnimal(Integer animalId) {
+        am.deleteAnimalByAnimalId(animalId);
+    }
+
+    //丢失动物信息管理--删除
+    public void deleteLose(Integer loseId) {
+        am.deleteLose(loseId);
+    }
+
+    //查看领养名单
+    public EasyUIResult queryAdoption(Integer page, Integer rows) {
+        //准备一个返回对象
+        EasyUIResult result = new EasyUIResult();
+        //封装total
+        Integer total = am.selectAdoptionCount();
+        result.setTotal(total);
+
+        //封装返回分页数据rows List<Volunteer>
+        Integer start = (page-1)*rows;
+        List<Adoption> pList = am.selectAdoptionByPage(start,rows);
+        result.setRows(pList);
+        return result;
+    }
 }
 
 

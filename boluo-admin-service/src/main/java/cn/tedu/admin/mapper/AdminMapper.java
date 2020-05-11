@@ -52,6 +52,18 @@ public interface AdminMapper {
 
     //删除评论
     void deleteComment(Integer leaveId);
+
+    //送养动物信息管理--删除
+    void deleteAnimalByAnimalId(Integer animalId);
+
+    //丢失动物信息管理--删除
+    void deleteLose(Integer loseId);
+
+    //查看领养名单-查出的总数量
+    Integer selectAdoptionCount();
+
+    //分页查看领养名单
+    List<Adoption> selectAdoptionByPage(@Param("start") Integer start,@Param("rows") Integer rows);
 }
 
 
