@@ -38,6 +38,12 @@ public interface UserMapper {
     //判断temp表中是否有userId
     Temp selectStatusByUserId(Integer userId);
 
+    //得到用户的申请领养状态码 判断用户是否已经领养过别的动物
+    Integer getUserType(Integer userId);
+
+    //改变用户的状态码为2--代表已经领养过动物，正在等待管理员审核
+    void changeUserType2(Integer userId);
+
     //查看自己正在申请领养的动物
     Animal selectTemp(Integer userId);
 
@@ -58,4 +64,7 @@ public interface UserMapper {
 
     //领养处---模糊查询
     List<Animal> selectAnimalByPage(@Param("start") Integer start,@Param("rows") Integer rows,@Param("text")String text);
+
+
+
 }

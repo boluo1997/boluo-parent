@@ -96,6 +96,20 @@
         )
     </insert>
 
+    <!-- 得到用户的申请领养状态码 判断用户是否已经领养过别的动物 -->
+    <select id="getUserType" parameterType="Integer" resultType="Integer">
+        select user_type
+        from user
+        where user_id = #{userId};
+    </select>
+
+    <!-- 改变用户的状态码为2-代表已经领养过动物，正在等待管理员审核 -->
+    <update id="changeUserType2">
+        update user set
+        user_type = 2
+        where user_id = #{userId};
+    </update>
+
     <!--查看自己正在申请领养的动物-->
     <select id="selectTemp" parameterType="Integer" resultType="Animal">
         SELECT animal_id,animal_name,give_name,give_phone

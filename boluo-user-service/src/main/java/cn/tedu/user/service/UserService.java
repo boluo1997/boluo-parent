@@ -110,8 +110,9 @@ public class UserService {
 
     //申请领养动物
     public void adoptAnimal(Integer userId, Integer animalId,String userName) {
-        this.existUserId(userId,animalId);
+        //this.existUserId(userId,animalId);
         um.insertTemp(userId,animalId,userName);
+        um.changeUserType2(userId);
     }
 
     //查看该动物有没有被其他人申请领养
@@ -130,6 +131,11 @@ public class UserService {
     public Temp existUserId(Integer userId, Integer animalId){
         Temp exist = um.selectStatusByUserIdAndAnimalId(userId,animalId);
         return exist;
+    }
+
+    //得到用户的申请领养状态码 判断用户是否已经领养过别的动物
+    public Integer getUserType(Integer userId) {
+        return um.getUserType(userId);
     }
 
     //查看自己正在申请领养的动物
@@ -172,6 +178,8 @@ public class UserService {
         result.setRows(pList);
         return result;
     }
+
+
 }
 
 

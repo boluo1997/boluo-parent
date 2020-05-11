@@ -7,7 +7,7 @@ public class User {
     private String userPhone;       //手机号
     private String userGender;      //性别
     private String userType;        //申请领养动物的状态码
-    
+
     public int getUserId() {
         return userId;
     }

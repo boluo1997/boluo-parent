@@ -3,6 +3,8 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="cn.tedu.user.mapper.UserMapper">
+
+    <!-- 注册用户之前查看用户名是否存在 -->
     <select id="selectUserCountByUserName" parameterType="String"
             resultType="Integer">
         select count(user_id)
@@ -10,6 +12,7 @@
         where user_name=#{userName};
     </select>
 
+    <!-- 注册用户 -->
     <insert id="insertUser" parameterType="User">
         insert into user (
             user_name,
@@ -26,6 +29,7 @@
         )
     </insert>
 
+    <!-- 登录 -->
     <select id="selectUserByUserNameAndPassword"
             parameterType="User" resultType="User">
         select *
@@ -33,22 +37,26 @@
         where user_name=#{userName} and user_password=#{userPassword};
     </select>
 
+    <!-- 查询用户总数量 -->
     <select id="selectUserCount" resultType="Integer">
         select count(user_id) from user;
     </select>
 
+    <!-- 分页查看用户 -->
     <select id="selectUserByPage" resultType="User">
         select *
         from user
         limit #{start},#{rows}
     </select>
 
+    <!-- 根据ID查询用户 -->
     <select id="selectUserById" resultType="User">
         select *
         from user
         where user_id = #{userId};
     </select>
 
+    <!-- 删除用户 -->
     <delete id="deleteUserById" parameterType="Integer">
         delete from user
         where user_id = #{userId};
@@ -87,6 +95,20 @@
             #{userName}
         )
     </insert>
+
+    <!-- 得到用户的申请领养状态码 判断用户是否已经领养过别的动物 -->
+    <select id="getUserType" parameterType="Integer" resultType="Integer">
+        select user_type
+        from user
+        where user_id = #{userId};
+    </select>
+
+    <!-- 改变用户的状态码为2-代表已经领养过动物，正在等待管理员审核 -->
+    <update id="changeUserType2">
+        update user set
+        user_type = 2
+        where user_id = #{userId};
+    </update>
 
     <!--查看自己正在申请领养的动物-->
     <select id="selectTemp" parameterType="Integer" resultType="Animal">
