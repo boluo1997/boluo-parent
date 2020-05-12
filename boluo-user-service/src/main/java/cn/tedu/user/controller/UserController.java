@@ -194,7 +194,18 @@ public class UserController {
         return us.queryAnimal(page,rows,text);
     }
 
-    
+    //修改个人信息
+    @RequestMapping("xiugai")
+    public SysResult xiugai(User user){
+        try{
+            us.xiugai(user);
+            return SysResult.ok();
+        }catch (Exception e){
+            e.printStackTrace();
+            return SysResult.build(201,"修改失败！",null);
+        }
+    }
+
 
 }
 

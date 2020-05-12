@@ -184,6 +184,11 @@ public class UserService {
     public Integer checkType(Integer userId) {
         return um.checkType(userId);
     }
+
+    //修改个人信息
+    public void xiugai(User user) {
+        um.xiugai(user);
+    }
 }
 
 

@@ -6,16 +6,17 @@
   <component name="ChangeListManager">
     <list default="true" id="244f92ec-cbda-46bd-8611-662a44175f0a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boluo-admin-service/src/main/java/cn/tedu/admin/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/boluo-admin-service/src/main/java/cn/tedu/admin/controller/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boluo-admin-service/src/main/java/cn/tedu/admin/mapper/AdminMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/boluo-admin-service/src/main/java/cn/tedu/admin/mapper/AdminMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boluo-admin-service/src/main/java/cn/tedu/admin/service/AdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/boluo-admin-service/src/main/java/cn/tedu/admin/service/AdminService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boluo-admin-service/src/main/resources/mapper/AdminMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/boluo-admin-service/src/main/resources/mapper/AdminMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boluo-admin-service/target/classes/cn/tedu/admin/mapper/AdminMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/boluo-admin-service/target/classes/cn/tedu/admin/mapper/AdminMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boluo-admin-service/target/classes/cn/tedu/admin/service/AdminService.class" beforeDir="false" afterPath="$PROJECT_DIR$/boluo-admin-service/target/classes/cn/tedu/admin/service/AdminService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boluo-admin-service/target/classes/mapper/AdminMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/boluo-admin-service/target/classes/mapper/AdminMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/boluo-user-service/src/main/java/cn/tedu/user/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/boluo-user-service/src/main/java/cn/tedu/user/controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/boluo-user-service/src/main/java/cn/tedu/user/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/boluo-user-service/src/main/java/cn/tedu/user/mapper/UserMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/boluo-user-service/src/main/java/cn/tedu/user/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/boluo-user-service/src/main/java/cn/tedu/user/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/boluo-user-service/src/main/resources/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/boluo-user-service/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/~$-唐山市流浪动物救助中心网站的设计与实现.docx" beforeDir="false" afterPath="$PROJECT_DIR$/~$-唐山市流浪动物救助中心网站的设计与实现.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boluo-user-service/target/classes/cn/tedu/user/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/boluo-user-service/target/classes/cn/tedu/user/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boluo-user-service/target/classes/cn/tedu/user/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/boluo-user-service/target/classes/cn/tedu/user/mapper/UserMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boluo-user-service/target/classes/cn/tedu/user/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/boluo-user-service/target/classes/cn/tedu/user/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boluo-user-service/target/classes/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/boluo-user-service/target/classes/mapper/UserMapper.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -79,12 +80,14 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/boluo-user-service/src/main/java/cn/tedu/user/service/UserService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="184" column="22" selection-start-line="184" selection-start-column="22" selection-end-line="184" selection-end-column="22" />
+            <state relative-caret-position="510">
+              <caret line="189" column="15" lean-forward="true" selection-start-line="189" selection-start-column="15" selection-end-line="189" selection-end-column="15" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#4849#4850#0" expanded="true" />
                 <element signature="e#4866#4867#0" expanded="true" />
+                <element signature="e#4943#4944#0" expanded="true" />
+                <element signature="e#4960#4961#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -93,8 +96,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/boluo-user-service/src/main/java/cn/tedu/user/mapper/UserMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="68" column="21" selection-start-line="68" selection-start-column="12" selection-end-line="68" selection-end-column="21" />
+            <state relative-caret-position="361">
+              <caret line="70" column="12" selection-start-line="70" selection-start-column="12" selection-end-line="70" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -133,20 +136,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/boluo-user-service/src/main/resources/mapper/UserMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="189" column="34" selection-start-line="189" selection-start-column="34" selection-end-line="189" selection-end-column="34" />
+            <state relative-caret-position="305">
+              <caret line="198" column="19" selection-start-line="198" selection-start-column="19" selection-end-line="198" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/boluo-user-service/src/main/java/cn/tedu/user/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="196" column="4" selection-start-line="196" selection-start-column="4" selection-end-line="196" selection-end-column="4" />
+            <state relative-caret-position="313">
+              <caret line="200" column="19" lean-forward="true" selection-start-line="200" selection-start-column="19" selection-end-line="200" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#4802#4803#0" expanded="true" />
@@ -244,14 +247,14 @@
         <option value="$PROJECT_DIR$/boluo-animal-service/src/main/java/cn/tedu/animal/controller/AnimalController.java" />
         <option value="$PROJECT_DIR$/boluo-common-resources/src/main/java/com/jt/common/pojo/Adoption.java" />
         <option value="$PROJECT_DIR$/boluo-common-resources/src/main/java/com/jt/common/pojo/User.java" />
-        <option value="$PROJECT_DIR$/boluo-user-service/src/main/java/cn/tedu/user/service/UserService.java" />
-        <option value="$PROJECT_DIR$/boluo-user-service/src/main/java/cn/tedu/user/mapper/UserMapper.java" />
-        <option value="$PROJECT_DIR$/boluo-user-service/src/main/resources/mapper/UserMapper.xml" />
         <option value="$PROJECT_DIR$/boluo-admin-service/src/main/java/cn/tedu/admin/controller/AdminController.java" />
         <option value="$PROJECT_DIR$/boluo-admin-service/src/main/java/cn/tedu/admin/service/AdminService.java" />
         <option value="$PROJECT_DIR$/boluo-admin-service/src/main/java/cn/tedu/admin/mapper/AdminMapper.java" />
         <option value="$PROJECT_DIR$/boluo-admin-service/src/main/resources/mapper/AdminMapper.xml" />
         <option value="$PROJECT_DIR$/boluo-user-service/src/main/java/cn/tedu/user/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/boluo-user-service/src/main/java/cn/tedu/user/service/UserService.java" />
+        <option value="$PROJECT_DIR$/boluo-user-service/src/main/java/cn/tedu/user/mapper/UserMapper.java" />
+        <option value="$PROJECT_DIR$/boluo-user-service/src/main/resources/mapper/UserMapper.xml" />
       </list>
     </option>
   </component>
@@ -444,7 +447,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.StarterAdmin">
+  <component name="RunManager" selected="Spring Boot.StarterUser">
     <configuration name="StarterAdmin" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="boluo-admin-service" />
       <extension name="coverage">
@@ -512,8 +515,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.StarterAdmin" />
         <item itemvalue="Spring Boot.StarterUser" />
+        <item itemvalue="Spring Boot.StarterAdmin" />
         <item itemvalue="Spring Boot.StarterImg" />
         <item itemvalue="Spring Boot.StarterGiveLose" />
         <item itemvalue="Spring Boot.StarterAnimal" />
@@ -590,7 +593,7 @@
       <workItem from="1589122308583" duration="78000" />
       <workItem from="1589168848743" duration="9240000" />
       <workItem from="1589199361690" duration="8644000" />
-      <workItem from="1589260845652" duration="4643000" />
+      <workItem from="1589260845652" duration="5275000" />
     </task>
     <task id="LOCAL-00001" summary="测试一下">
       <created>1589084966666</created>
@@ -641,17 +644,24 @@
       <option name="project" value="LOCAL" />
       <updated>1589212383921</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="大体改完，两个月之前写的代码真的是屎山o(╥﹏╥)o">
+      <created>1589269015142</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1589269015142</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="264387000" />
+    <option name="totallyTimeSpent" value="265019000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="186" y="17" width="1306" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28445512" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28445512" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -731,7 +741,8 @@
     <MESSAGE value="评论管理" />
     <MESSAGE value="大改之前--准备改领养功能" />
     <MESSAGE value="把我的屎山保存在北极大陆" />
-    <option name="LAST_COMMIT_MESSAGE" value="把我的屎山保存在北极大陆" />
+    <MESSAGE value="大体改完，两个月之前写的代码真的是屎山o(╥﹏╥)o" />
+    <option name="LAST_COMMIT_MESSAGE" value="大体改完，两个月之前写的代码真的是屎山o(╥﹏╥)o" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/boluo-user-service/src/test/java/cn/tedu/LinkedBinaryTree.java">
@@ -1140,32 +1151,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/boluo-user-service/src/main/java/cn/tedu/user/mapper/UserMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="68" column="21" selection-start-line="68" selection-start-column="12" selection-end-line="68" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boluo-user-service/src/main/java/cn/tedu/user/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="184" column="22" selection-start-line="184" selection-start-column="22" selection-end-line="184" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4849#4850#0" expanded="true" />
-            <element signature="e#4866#4867#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boluo-user-service/src/main/resources/mapper/UserMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="189" column="34" selection-start-line="189" selection-start-column="34" selection-end-line="189" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/boluo-admin-service/src/main/java/cn/tedu/admin/controller/AdminController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -1217,8 +1202,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/boluo-user-service/src/main/java/cn/tedu/user/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="196" column="4" selection-start-line="196" selection-start-column="4" selection-end-line="196" selection-end-column="4" />
+        <state relative-caret-position="313">
+          <caret line="200" column="19" lean-forward="true" selection-start-line="200" selection-start-column="19" selection-end-line="200" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#4802#4803#0" expanded="true" />
@@ -1230,6 +1215,34 @@
             <element signature="e#5990#5991#0" expanded="true" />
             <element signature="e#6043#6044#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boluo-user-service/src/main/java/cn/tedu/user/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="189" column="15" lean-forward="true" selection-start-line="189" selection-start-column="15" selection-end-line="189" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4849#4850#0" expanded="true" />
+            <element signature="e#4866#4867#0" expanded="true" />
+            <element signature="e#4943#4944#0" expanded="true" />
+            <element signature="e#4960#4961#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boluo-user-service/src/main/java/cn/tedu/user/mapper/UserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="70" column="12" selection-start-line="70" selection-start-column="12" selection-end-line="70" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boluo-user-service/src/main/resources/mapper/UserMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="198" column="19" selection-start-line="198" selection-start-column="19" selection-end-line="198" selection-end-column="19" />
         </state>
       </provider>
     </entry>

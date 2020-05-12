@@ -190,6 +190,16 @@
         where user_id = #{userId};
     </select>
 
+    <!--修改个人信息-->
+    <update id="xiugai" parameterType="User">
+        update user set
+        user_name = #{userName},
+        user_password = #{userPassword},
+        user_phone = #{userPhone},
+        user_gender = #{userGender}
+        where user_id = #{userId};
+    </update>
+
 </mapper>
 
 

@@ -68,4 +68,6 @@ public interface UserMapper {
     //查看自己的领养状态码
     Integer checkType(Integer userId);
 
+    //修改个人信息
+    void xiugai(User user);
 }

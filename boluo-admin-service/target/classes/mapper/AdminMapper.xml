@@ -60,6 +60,7 @@
         )
     </insert>
 
+    <!-- 改变temp表状态码为1，代表该条数据已经被删除 -->
     <update id="updateTemp">
         update temp
         set status_id = 1
@@ -145,6 +146,13 @@
         SELECT adopt.user_id,user.user_name,adopt.animal_id,animal.animal_name,adopt.adopt_create_time
         FROM USER USER JOIN adopt adopt ON user.user_id=adopt.user_id JOIN animal animal ON adopt.animal_id=animal.animal_id
     </select>
+
+    <!-- 批准领养 把用户状态码改为3 -->
+    <update id="changeUserType3">
+        update user
+        set user_type = 3
+        where user_id = #{userId};
+    </update>
 
 
 </mapper>
