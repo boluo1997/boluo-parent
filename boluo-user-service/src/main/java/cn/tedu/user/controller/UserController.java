@@ -136,16 +136,19 @@ public class UserController {
             us.adoptAnimal(userId,animalId,userName);
             return SysResult.ok();
         }
-
-
     }
-
 
 
     //查看自己正在申请领养的动物
     @RequestMapping("check/temp")
     public Animal querTemp(Integer userId){
         return us.queryTemp(userId);
+    }
+
+    //查看自己的领养状态码
+    @RequestMapping("check/type")
+    public Integer checkType(Integer userId){
+        return us.checkType(userId);
     }
 
     //查看自己被批准的可以领养的动物
@@ -190,6 +193,9 @@ public class UserController {
     public EasyUIResult queryAnimal(Integer page, Integer rows,String text){
         return us.queryAnimal(page,rows,text);
     }
+
+    
+
 }
 
 

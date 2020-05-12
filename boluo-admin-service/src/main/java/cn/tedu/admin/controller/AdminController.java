@@ -72,7 +72,18 @@ public class AdminController {
     }
 
 
-    //拒绝领养                     把伪领养表中的内容删除  并加入批准未通过的表中
+    //拒绝领养                     把伪领养表中的内容删除 把用户领养状态码改为4
+    @RequestMapping("refuse/adopt")
+    public SysResult refuseAdopt(Adopt adopt){
+        //接收的是页面中显示的userId和animalId
+        try{
+            as.refuseAdopt(adopt);
+            return SysResult.ok();
+        }catch (Exception e){
+            e.printStackTrace();
+            return SysResult.build(201,"批准失败!",null);
+        }
+    }
 
 
     //查看申请成为志愿者人员名单     分页查看
@@ -95,6 +106,17 @@ public class AdminController {
     }
 
     //拒绝成为志愿者
+    @RequestMapping("refuse/volunteer")
+    public SysResult refuseVolunteer(Integer userId){
+        try{
+            as.refuseVolunteer(userId);
+            return SysResult.ok();
+        }catch (Exception e){
+            e.printStackTrace();
+            return SysResult.build(201,"批准失败!",null);
+        }
+    }
+
     
     //查看志愿者名单
     @RequestMapping("queryAlreadyVolunteer")

@@ -69,13 +69,18 @@ public class AdminService {
     }
 
 
-    //批准领养      把伪领养表中的内容写到领养表中  并把temp表中的状态码改为1
+    //批准领养      把伪领养表中的内容写到领养表中  并把temp表中的状态码改为1(相当于把临时表中的数据删除)
     public void passAdopt(Adopt adopt) {
         //userId和animalId就是伪领养表中的内容
         adopt.setAdoptCreateTime(new Date());
         am.insertAdopt(adopt);
         Integer userId = adopt.getUserId();
         am.updateTemp(userId);
+        am.changeUserType3(userId);
+
+        //把该条动物信息从animal表中删除
+        //Integer animalId = adopt.getAnimalId();
+        //am.deleteAnimalByAnimalId(animalId);
     }
 
 
@@ -97,6 +102,11 @@ public class AdminService {
     //批准成为志愿者
     public void passVolunteer(Integer userId) {
         am.updateVolunteer(userId);
+    }
+
+    //拒绝成为志愿者，把volunteer状态码改为2
+    public void refuseVolunteer(Integer userId) {
+        am.refuseVolunteer(userId);
     }
 
     //查看志愿者名单
@@ -158,6 +168,15 @@ public class AdminService {
         result.setRows(pList);
         return result;
     }
+
+    //拒绝领养  把temp表中数据删除(改状态码) 把用户type改为4 表示已经拒绝
+    public void refuseAdopt(Adopt adopt) {
+        Integer userId = adopt.getUserId();
+        am.updateTemp(userId);
+        am.changeUserType4(userId);
+    }
+
+
 }
 
 

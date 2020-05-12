@@ -180,6 +180,10 @@ public class UserService {
     }
 
 
+    //查看自己的领养状态码
+    public Integer checkType(Integer userId) {
+        return um.checkType(userId);
+    }
 }
 
 

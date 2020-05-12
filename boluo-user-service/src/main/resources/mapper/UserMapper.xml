@@ -183,6 +183,13 @@
         limit #{start},#{rows};
     </select>
 
+    <!-- 查看自己的领养状态码 -->
+    <select id="checkType" resultType="Integer">
+        select user_type
+        from user
+        where user_id = #{userId};
+    </select>
+
 </mapper>
 
 

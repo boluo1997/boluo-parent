@@ -65,6 +65,7 @@ public interface UserMapper {
     //领养处---模糊查询
     List<Animal> selectAnimalByPage(@Param("start") Integer start,@Param("rows") Integer rows,@Param("text")String text);
 
-
+    //查看自己的领养状态码
+    Integer checkType(Integer userId);
 
 }

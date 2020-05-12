@@ -64,6 +64,15 @@ public interface AdminMapper {
 
     //分页查看领养名单
     List<Adoption> selectAdoptionByPage(@Param("start") Integer start,@Param("rows") Integer rows);
+
+    //批准领养  把用户状态码改为3
+    void changeUserType3(Integer userId);
+
+    //拒绝领养  把用户状态码改为4
+    void changeUserType4(Integer userId);
+
+    //拒绝成为志愿者
+    void refuseVolunteer(Integer userId);
 }
 
 
