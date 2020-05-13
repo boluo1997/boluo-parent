@@ -61,7 +61,7 @@ public class AdminController {
     //批准领养              把伪领养表中的内容写到领养表中  并加入批准通过的表中
     @RequestMapping("pass/adopt")
     public SysResult passAdopt(Adopt adopt){
-        //接收的是页面中显示的userId和animalId     可以在此处加一个后端校验(service)
+        //接收的是页面中显示的userId和animalId
         try{
             as.passAdopt(adopt);
             return SysResult.ok();
@@ -75,6 +75,8 @@ public class AdminController {
     //拒绝领养                     把伪领养表中的内容删除 把用户领养状态码改为4
     @RequestMapping("refuse/adopt")
     public SysResult refuseAdopt(Adopt adopt){
+
+        System.out.println(adopt);
         //接收的是页面中显示的userId和animalId
         try{
             as.refuseAdopt(adopt);
@@ -172,6 +174,9 @@ public class AdminController {
     public EasyUIResult queryAdoption(Integer page, Integer rows){
         return as.queryAdoption(page,rows);
     }
+
+
+
 
 
 }

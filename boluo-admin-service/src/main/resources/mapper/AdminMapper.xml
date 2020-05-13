@@ -165,7 +165,7 @@
     </update>
 
     <!-- 拒绝领养 把用户状态码改为4 -->
-    <update id="changeUserType3">
+    <update id="changeUserType4">
         update user
         set user_type = 4
         where user_id = #{userId};

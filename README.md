@@ -37,6 +37,10 @@ index7.html		丢失动物信息管理
 
 index8.html		查看领养名单
 
+index10.html		添加送养动物信息
+
+
+
 
 
 temp表状态码为1代表数据已经被删除

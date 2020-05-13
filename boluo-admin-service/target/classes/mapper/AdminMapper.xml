@@ -88,6 +88,16 @@
         where user_id = #{userId};
     </update>
 
+
+    <!-- 拒绝成为志愿者 -->
+    <update id="refuseVolunteer" parameterType="Integer">
+        update volunteer
+        set
+        volunteer_status = 2
+        where user_id = #{userId};
+    </update>
+
+
     <select id="selectAlreadyVolunteerCount" resultType="Integer">
         select count(volunteer_id) from volunteer;
     </select>
@@ -151,6 +161,13 @@
     <update id="changeUserType3">
         update user
         set user_type = 3
+        where user_id = #{userId};
+    </update>
+
+    <!-- 拒绝领养 把用户状态码改为4 -->
+    <update id="changeUserType4">
+        update user
+        set user_type = 4
         where user_id = #{userId};
     </update>
 

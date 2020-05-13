@@ -183,6 +183,23 @@
         limit #{start},#{rows};
     </select>
 
+    <!-- 查看自己的领养状态码 -->
+    <select id="checkType" resultType="Integer">
+        select user_type
+        from user
+        where user_id = #{userId};
+    </select>
+
+    <!--修改个人信息-->
+    <update id="xiugai" parameterType="User">
+        update user set
+        user_name = #{userName},
+        user_password = #{userPassword},
+        user_phone = #{userPhone},
+        user_gender = #{userGender}
+        where user_id = #{userId};
+    </update>
+
 </mapper>
 
 
