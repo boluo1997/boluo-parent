@@ -74,8 +74,8 @@ public class GiveloseService {
 
     //留言功能
     public void addLeaveMessage(LeaveMessage leaveMessage) {
-        String comment = leaveMessage.getLeaveMessage();
-        comment.replaceAll("他妈的","***");
+        //String comment = leaveMessage.getLeaveMessage();
+        //comment.replaceAll("他妈的","***");
         gm.insertLeaveMessage(leaveMessage);
     }
 
