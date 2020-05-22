@@ -187,6 +187,8 @@ public class UserService {
 
     //修改个人信息
     public void xiugai(User user) {
+        String md5Pass = MD5Util.md5(user.getUserPassword());
+        user.setUserPassword(md5Pass);
         um.xiugai(user);
     }
 }
