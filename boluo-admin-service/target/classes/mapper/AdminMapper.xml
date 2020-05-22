@@ -172,4 +172,12 @@
     </update>
 
 
+    <!-- 拒绝领养之后，把temp表中的数据删除，不影响别的用户继续领养 -->
+    <delete id="deleteTemp522" parameterType="Integer">
+        delete
+        from temp
+        where user_id = #{userId};
+    </delete>
+
+
 </mapper>

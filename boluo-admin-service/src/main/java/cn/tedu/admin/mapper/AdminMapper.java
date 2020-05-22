@@ -73,6 +73,9 @@ public interface AdminMapper {
 
     //拒绝成为志愿者
     void refuseVolunteer(Integer userId);
+
+    //拒绝领养之后，把temp表中的数据删除，不影响别的用户继续领养
+    void deleteTemp522(Integer userId);
 }
 
 

@@ -172,7 +172,8 @@ public class AdminService {
     //拒绝领养  把temp表中数据删除(改状态码) 把用户type改为4 表示已经拒绝
     public void refuseAdopt(Adopt adopt) {
         Integer userId = adopt.getUserId();
-        am.updateTemp(userId);
+        //am.updateTemp(userId);
+        am.deleteTemp522(userId);
         am.changeUserType4(userId);
     }
 

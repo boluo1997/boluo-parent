@@ -128,7 +128,7 @@ public class UserController {
     @RequestMapping("tempAnimal")
     public SysResult tempAnimal(Integer userId,Integer animalId,String userName){
 
-        if(us.getUserType(userId) != 1){        //如果用户申请领养状态码不为1，说明用户领养过别的动物
+        if(us.getUserType(userId) == 2){        //如果用户申请领养状态码不为1，说明用户领养过别的动物
             return SysResult.build(201,"您已经领养过其他的动物！",null);
         }else if(us.existAnimalIdInTemp(animalId)!=null){      //如果动物ID存在在temp表中，就说明该动物已经被其他人领养
             return SysResult.build(202,"该动物已被其他人领养！",null);
